@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+:root {
+   --black: #333333;
+   --main-red: #E50038;
+   --sub-pink: #E3007F;
+   --sub-font: 'Noto Sans TC', sans-serif;
+}
+
+svg {
+  position: absolute;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  opacity: 30%;
+  pointer-events: none;
+}
+
+path {
+  fill: none;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  
+}
+
+
+
+
+
+body {
+   font-family: 'Pretendard', 'Noto Sans TC', '맑은 고딕', sans-serif;
+   font-weight: 400;
+   font-size: 1.6rem;
+   line-height: 1.5;
+   letter-spacing: -2.5%;
+   color: var(--black);
+   overflow-x: hidden;
+   -ms-overflow-style: none;
+
+}
+
+
+
+::-webkit-scrollbar {
+   display: none;
+}
+
+
+body{
+width: 100vw;
+aspect-ratio: 1.777;
+}
+
+
+.inner {
+ /*aspect-ratio: 가로비율 / 세로비율*/
+   aspect-ratio: 1/0.0625;
+   height: 84px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.inner h1{
+    width: 160px;
+    height: 100%;
+   
+}
+
+
+/* header 영역 */
+
+#header {
+    /*aspect-ratio: 가로비율 / 세로비율*/
+   width: 100%;
+   aspect-ratio: 30.642/1;
+   margin: 0 auto;
+   z-index: 99;
+   transition: all 0.5s;
+   border-bottom:1.5px solid var(--black);
+   background-color: #ffffff;
+   position: fixed;
+
+}
+
+
+.gnb{
+   width: fit-content;
+   display: flex;
+   align-items: center;
+}
+
+.gnb li a{
+   width: fit-content;
+   color: #a3a3a3;
+   margin: 6px;
+   font-weight: 500;
+}
+
+
+#gnb_Btn{
+   padding: 30 0 30 30px;
+   font-size: 1.5rem;
+   font-weight: 700;
+   cursor: pointer;
+   float: right;
+   margin-left: 138px;
+}
+
+/*section01*/
+.section01{
+   width: 100%;
+   border-bottom:1px solid #333333;
+  
+}
+
+
+.section01Contents{
+    width: 1360px;
+    aspect-ratio: 1.5185/1;
+    margin: 0 auto;
+     position: relative;
+}
+
+
+.section01Contents #flower01 {
+   width: 190px;
+   aspect-ratio: 0.7666/1;
+   position: absolute;
+   top: -65px;
+   left: 30px;
+   rotate: 89deg;
+}
+
+
+.section01Contents #flower02{
+   width: 147.55px;
+   aspect-ratio: 0.7666/1;
+   position: absolute;
+   bottom: 2.6%;
+   left: 30%;
+   transform: translateX(-30%);
+   rotate: 135deg;
+   z-index: 10;
+}
+
+
+.utill{
+   width: 1160.9px;
+   aspect-ratio: 3.869/1;
+   text-align: center;  
+   line-height:130px ;  
+   font-size: 14rem; 
+   font-weight:900;
+   position: absolute;
+   top:80px ;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 11;
+}
+
+
+.utill ~ .utill{
+      width: 1160.9px;
+   aspect-ratio: 3.869/1;
+   text-align: center;  
+   line-height:130px ;  
+   font-size: 14rem; 
+   font-weight:900;
+   position: absolute;
+   top:210px ;
+   left: 50%;
+   transform: translateX(-50%);
+   z-index: 11;
+}
+
+
+.section01Contents #mainBanner{
+   width: 484px;
+   aspect-ratio: 1/1;
+   position: absolute;
+   left: 50%;
+   top: 276px;
+   transform: translateX(-50%);
+   
+}
+
+
+/*section02*/
+.section02{
+   width: 1360px;
+   aspect-ratio: 2.0666/1;
+   margin: 0 auto;
+}
