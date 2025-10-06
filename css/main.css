@@ -132,17 +132,16 @@ aspect-ratio: 1.777;
 }
 
 
-.section01Contents #flower01 {
-   width: 190px;
-   aspect-ratio: 0.7666/1;
+#flower01 {
+   width: 330px;
+   height: 120px;
    position: absolute;
-   top: -65px;
    left: 0;
-   rotate: 89deg;
+   
 }
 
 
-.section01Contents #flower02{
+ #flower02{
    width: 147.55px;
    aspect-ratio: 0.7666/1;
    position: absolute;
@@ -153,8 +152,7 @@ aspect-ratio: 1.777;
    z-index: 10;
 }
 
-
-.section01Contents #flower03{
+ #flower03{
    width: 87.55px;
    aspect-ratio: 0.7666/1;
    position: absolute;
@@ -166,8 +164,7 @@ aspect-ratio: 1.777;
    z-index: 10;
 }
 
-
-.section01Contents #flower04{
+ #flower04{
     width: 240px;
    aspect-ratio: 0.9034/1;
    position: absolute;
@@ -176,6 +173,19 @@ aspect-ratio: 1.777;
    transform: translateX(-10%);
    rotate:8.1deg;
    z-index: 12;
+}
+
+
+
+#flower05{
+    width: 140px;
+   aspect-ratio: 0.9034/1;
+   position: absolute;
+   top: 23.6%;
+   right: 40%;
+   transform: translateX(-40%);
+   rotate:210deg;
+   z-index: -2;
 }
 
 
@@ -194,6 +204,7 @@ aspect-ratio: 1.777;
    transform: translateX(-50%);
    z-index: 11;
    margin-top: 7px;
+   background: transparent;
 }
 
 
@@ -210,6 +221,7 @@ aspect-ratio: 1.777;
    transform: translateX(-50%);
    z-index: 11;
    margin-top: 0px;
+   background: transparent;
 }
 
 
@@ -220,7 +232,8 @@ aspect-ratio: 1.777;
    left: 50%;
    top: 276px;
    transform: translateX(-50%);
-   
+   object-fit: cover;
+   z-index: 1;
 }
 
 
@@ -268,10 +281,11 @@ aspect-ratio: 1.777;
 }
 
 .section02Contents{
-    width: 1360px;
-   aspect-ratio: 2.0666/1;
+    width: 1380px;
+   aspect-ratio: 1.899/1;
    margin: 0 auto;
    position: relative;
+   border-bottom: 1px solid black 65%;
 }
 
 .section02Contents h3{
@@ -280,7 +294,7 @@ aspect-ratio: 1.777;
    font-size: 4.59rem;
    font-weight: 500;
    position: absolute;
-   top: 35px;
+   top: 27px;
    left: 50%;
    transform: translateX(-50%);
 }
@@ -288,10 +302,20 @@ aspect-ratio: 1.777;
 
 .section02Contents img{
    width: 1380px;
-   aspect-ratio: 2.6993/1;
+   aspect-ratio: 2.5339/1;
    position: absolute;
    left: 50%;
-   bottom: 0;
    transform: translateX(-50%);
+   bottom: 58px;
+   object-fit: cover;
+   
+}
 
+.section02ContentsCarousell{
+   width: 1380px;
+   aspect-ratio: 2.0875/1;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   border-top: 1px solid black;
 }

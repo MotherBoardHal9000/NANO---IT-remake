@@ -1,3 +1,4 @@
+//마우스 커서 이펙트
 const trails = document.querySelectorAll(".trail");
 const smoothPointer = {
   x: window.innerWidth / 2,
@@ -35,10 +36,11 @@ function updatePath() {
   requestAnimationFrame(updatePath);
 }
 
-updatePath();
+updatePath(requestAnimationFrame);
+//
+//시작 메인 타이포그래피 애니메이션
 
-
-const duration = 1;
+const duration = 0.8;
 const numberOfTargets = gsap.utils.toArray('.utill > div').length
 const pause = 1.5;
 const stagger = duration + pause;
@@ -54,16 +56,12 @@ tl.from('.utill > div',{
   duration:duration,
   stagger:{
     each:stagger,
-    
     repeatDelay:delay
   }
 })
-.to('.utill < div',{
-  rotationX:90,
-  opacity:1,
-  duration:duration,
-  stagger: {
-    each:stagger,
-    repeatDelay:delay
-  }
-},stagger)
+//메인 배너 꽃잎 장식 애니메이션
+gsap.to('#flower01', {
+        y: 84,
+        duration: 2,
+        rotation: 0,
+      });
