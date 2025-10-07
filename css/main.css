@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
+
 :root {
    --black: #333333;
    --main-red: #E50038;
@@ -30,9 +31,6 @@ path {
   stroke-linejoin: round;
   
 }
-
-
-
 
 
 body {
@@ -277,15 +275,15 @@ aspect-ratio: 1.777;
    width: 100%;
    height:fit-content;
 
-   
 }
 
 .section02Contents{
-    width: 1380px;
+   width: 1380px;
    aspect-ratio: 1.899/1;
    margin: 0 auto;
    position: relative;
    border-bottom: 1px solid black 65%;
+ 
 }
 
 .section02Contents h3{
@@ -318,6 +316,7 @@ aspect-ratio: 1.777;
    left: 50%;
    transform: translateX(-50%);
    border-top: 1px solid black;
+   overflow-x: hidden;
 }
 
 .section02ContentsCarousell h3{
@@ -334,22 +333,42 @@ aspect-ratio: 1.777;
 
 
 .carousellContainer{
-   width: 100%;
-   aspect-ratio: 2.2380/1;
-   overflow: hidden;
+   width: 1380px;
+   height: 88%;
    display: flex;
-    
+   transition: all 0.9s;
 }
 
 
 .section02ContentsCarousell img{
    width: 403px;
-   aspect-ratio: 0.8027/1;
+   aspect-ratio: 0.80119/1;
    left: 0;
    top: -10%;
    transform: translateY(10%);
    margin-right: 24px;
-   
+   transition: all 0.9s;  
 }
 
 
+
+.slideBtn{
+   width: 110px;
+   aspect-ratio: 2.0370/1;
+   position: absolute;
+   top: 1940px;
+   left: 22%;
+   transform: translateX(-22%);
+   z-index: 35;
+   display: flex;
+   justify-content: space-between;
+}
+
+
+#service{
+   width: fit-content;
+   height: fit-content;
+   position: absolute;
+   left: 0;
+   bottom: -150px;
+}

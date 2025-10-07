@@ -76,32 +76,23 @@ gsap.to('#flower01', {
 //
 //
 //
-      let nowPicture = 1;
+let nowPicture = 1;
 
-      document
-        .querySelector(".carousellBtnI ")
-        .addEventListener("click", function () {
-          if (nowPicture == 1) {
-            document.querySelector(".section03Contents").style.transform =
-              "translateX(-400px)";
-            nowPicture += 1;
-          } else if (nowPicture == 2) {
-            document.querySelector(".section03Contents").style.transform =
-              "translateX(-800px)";
-            nowPicture += 1;
-          }
-        });
-
-      document
-        .querySelector(".carousellBtnII ")
-        .addEventListener("click", function () {
-          if (nowPicture == 3) {
-            document.querySelector(".section03Contents ").style.transform =
-              "translateX(-400px)";
-            nowPicture -= 1;
-          } else if (nowPicture == 2) {
-            document.querySelector(".section03Contents ").style.transform =
-              "translateX(0px)";
-            nowPicture -= 1;
-          }
-        });
+document.getElementById("img_Right").addEventListener("click", function () {
+  if (nowPicture == 1) {
+    document.querySelector(".carousellContainer").style.transform = "translateX(-380px)";
+    nowPicture += 1;
+  } else if (nowPicture == 2) {
+    document.querySelector(".carousellContainer").style.transform = "translateX(0px)";
+    nowPicture += 1;
+  }
+});
+document.getElementById("img_Left").addEventListener("click", function () {
+  if (nowPicture == 3) {
+    document.querySelector(".carousellContainer").style.transform = "translateX(-380px)";
+    nowPicture -= 1;
+  } else if (nowPicture == 2) {
+    document.querySelector(".carousellContainer").style.transform = "translateX(0px)";
+    nowPicture = nowPicture -= 1;
+  }
+});
