@@ -38,6 +38,13 @@ function updatePath() {
 
 updatePath(requestAnimationFrame);
 //
+//메인배너 이미지 애니메이션
+gsap.to("#mainBanner", {
+  duration: 1.5,
+  ease: "power4.inOut",
+  clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+});
+//
 //시작 메인 타이포그래피 애니메이션
 
 const duration = 0.8;
@@ -45,7 +52,6 @@ const numberOfTargets = gsap.utils.toArray('.utill > div').length
 const pause = 1.5;
 const stagger = duration + pause;
 const delay = stagger * (numberOfTargets - 1) + pause;
-
 const tl = gsap.timeline();
 
 gsap.set('.utill > div',{transformOrigin:'100% 50% -50'})
@@ -59,9 +65,43 @@ tl.from('.utill > div',{
     repeatDelay:delay
   }
 })
+//
+//
 //메인 배너 꽃잎 장식 애니메이션
 gsap.to('#flower01', {
         y: 84,
-        duration: 2,
+        duration: 1.5,
         rotation: 0,
       });
+//
+//
+//
+      let nowPicture = 1;
+
+      document
+        .querySelector(".carousellBtnI ")
+        .addEventListener("click", function () {
+          if (nowPicture == 1) {
+            document.querySelector(".section03Contents").style.transform =
+              "translateX(-400px)";
+            nowPicture += 1;
+          } else if (nowPicture == 2) {
+            document.querySelector(".section03Contents").style.transform =
+              "translateX(-800px)";
+            nowPicture += 1;
+          }
+        });
+
+      document
+        .querySelector(".carousellBtnII ")
+        .addEventListener("click", function () {
+          if (nowPicture == 3) {
+            document.querySelector(".section03Contents ").style.transform =
+              "translateX(-400px)";
+            nowPicture -= 1;
+          } else if (nowPicture == 2) {
+            document.querySelector(".section03Contents ").style.transform =
+              "translateX(0px)";
+            nowPicture -= 1;
+          }
+        });

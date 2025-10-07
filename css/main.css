@@ -319,3 +319,37 @@ aspect-ratio: 1.777;
    transform: translateX(-50%);
    border-top: 1px solid black;
 }
+
+.section02ContentsCarousell h3{
+   width: 320px;
+   aspect-ratio: 2.666/1;
+   font-size: 4.59rem;
+   font-weight: 400;
+   position: absolute;
+   top: -38px;
+   left: 0;
+   background-color: #ffffff;
+   
+}
+
+
+.carousellContainer{
+   width: 100%;
+   aspect-ratio: 2.2380/1;
+   overflow: hidden;
+   display: flex;
+    
+}
+
+
+.section02ContentsCarousell img{
+   width: 403px;
+   aspect-ratio: 0.8027/1;
+   left: 0;
+   top: -10%;
+   transform: translateY(10%);
+   margin-right: 24px;
+   
+}
+
+
