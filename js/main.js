@@ -80,7 +80,7 @@ let nowPicture = 1;
 
 document.getElementById("img_Right").addEventListener("click", function () {
   if (nowPicture == 1) {
-    document.querySelector(".carousellContainer").style.transform = "translateX(-380px)";
+    document.querySelector(".carousellContainer").style.transform = "translateX(-280px)";
     nowPicture += 1;
   } else if (nowPicture == 2) {
     document.querySelector(".carousellContainer").style.transform = "translateX(0px)";
@@ -89,10 +89,18 @@ document.getElementById("img_Right").addEventListener("click", function () {
 });
 document.getElementById("img_Left").addEventListener("click", function () {
   if (nowPicture == 3) {
-    document.querySelector(".carousellContainer").style.transform = "translateX(-380px)";
+    document.querySelector(".carousellContainer").style.transform = "translateX(-280px)";
     nowPicture -= 1;
   } else if (nowPicture == 2) {
     document.querySelector(".carousellContainer").style.transform = "translateX(0px)";
     nowPicture = nowPicture -= 1;
   }
 });
+
+
+
+
+
+//스크롤트리거 패럴렉스
+
+window.addEventListener('scroll',function(){ console.log('window.scrollY')})

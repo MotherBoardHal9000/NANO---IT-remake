@@ -42,19 +42,14 @@ body {
    color: var(--black);
    overflow-x: hidden;
    -ms-overflow-style: none;
+   width: 100%;
+   height: auto;
 
 }
-
 
 
 ::-webkit-scrollbar {
    display: none;
-}
-
-
-body{
-width: 100vw;
-aspect-ratio: 1.777;
 }
 
 
@@ -117,6 +112,7 @@ aspect-ratio: 1.777;
 /*section01*/
 .section01{
    width: 100%;
+   height: fit-content;
    border-bottom:1px solid #333333;
   
 }
@@ -272,7 +268,7 @@ aspect-ratio: 1.777;
 
 /*section02*/
 .section02{
-   width: 100%;
+   width: 100vw;
    height:fit-content;
 
 }
@@ -282,7 +278,7 @@ aspect-ratio: 1.777;
    aspect-ratio: 1.899/1;
    margin: 0 auto;
    position: relative;
-   border-bottom: 1px solid black 65%;
+  
  
 }
 
@@ -300,7 +296,7 @@ aspect-ratio: 1.777;
 
 .section02Contents img{
    width: 1380px;
-   aspect-ratio: 2.5339/1;
+   aspect-ratio: 2.533/1;
    position: absolute;
    left: 50%;
    transform: translateX(-50%);
@@ -312,16 +308,17 @@ aspect-ratio: 1.777;
 .section02ContentsCarousell{
    width: 1380px;
    aspect-ratio: 2.0875/1;
-   position: absolute;
+   position: relative;
    left: 50%;
    transform: translateX(-50%);
    border-top: 1px solid black;
    overflow-x: hidden;
+   margin-bottom: 50px;
 }
 
 .section02ContentsCarousell h3{
    width: 320px;
-   aspect-ratio: 2.666/1;
+   aspect-ratio: 3.2906/1;
    font-size: 4.59rem;
    font-weight: 400;
    position: absolute;
@@ -333,10 +330,12 @@ aspect-ratio: 1.777;
 
 
 .carousellContainer{
+   position: relative;
    width: 1380px;
-   height: 88%;
+   aspect-ratio: 2.3193/1;
    display: flex;
-   transition: all 0.9s;
+   justify-content: flex-start;
+   transition: all 0.7s;
 }
 
 
@@ -347,7 +346,7 @@ aspect-ratio: 1.777;
    top: -10%;
    transform: translateY(10%);
    margin-right: 24px;
-   transition: all 0.9s;  
+   transition: all 0.7s;  
 }
 
 
@@ -359,7 +358,7 @@ aspect-ratio: 1.777;
    top: 1940px;
    left: 22%;
    transform: translateX(-22%);
-   z-index: 35;
+   z-index: 10;
    display: flex;
    justify-content: space-between;
 }
@@ -371,4 +370,77 @@ aspect-ratio: 1.777;
    position: absolute;
    left: 0;
    bottom: -150px;
+}
+
+/*section03*/
+
+
+.section03{ 
+   width: 100%;
+   height: fit-content;
+}
+
+
+
+.section03Contents{
+   width: 1380px;
+   aspect-ratio: 1.6103/1;
+   margin: 0 auto;
+   position: relative;
+   border-top: 1px solid var(--black);
+      border-bottom: 1px solid var(--black);
+}
+
+
+
+.section03Contents h3{  width: 370px;
+   aspect-ratio:5.1454/1;
+   font-size: 4.59rem;
+   font-weight: 400;
+   position: absolute;
+   top: -38px;
+   left: 0;
+   background-color: #ffffff;}
+
+
+.section03Contents img{
+   margin-top: 49px;
+}
+
+.section03Contents aside{
+   width: fit-content;
+   height: fit-content;
+   padding-top: 24px;
+   letter-spacing: -2.5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*section04*/
+.section04{ 
+   width: 100%;
+   height: fit-content;
+}
+
+
+.section04Contents{
+   width: 1380px;
+   aspect-ratio: 1.2454/1;
+   position: relative;
+   margin: 0 auto;
+   border: 1px solid red;
+
 }
