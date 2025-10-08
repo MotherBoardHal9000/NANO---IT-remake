@@ -403,19 +403,31 @@ body {
    background-color: #ffffff;}
 
 
+.section03Contents article{
+   width: fit-content;
+   height: fit-content;
+   float: left;
+}
+
 .section03Contents img{
    margin-top: 49px;
 }
 
 .section03Contents aside{
-   width: fit-content;
-   height: fit-content;
+   width: 402px;
+   aspect-ratio: 1.9142/1;
    padding-top: 24px;
    letter-spacing: -2.5%;
 }
 
 
-
+.technology_List{
+   width:940px;
+   aspect-ratio: 1.100/1;
+   border: 1px solid red;
+   float: right;
+   
+}
 
 
 
@@ -441,6 +453,4 @@ body {
    aspect-ratio: 1.2454/1;
    position: relative;
    margin: 0 auto;
-   border: 1px solid red;
-
 }
