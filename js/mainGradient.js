@@ -6,12 +6,6 @@ const COLORS = [
 
 
 
-
-
-
-
-
-
 // class는 constructor만드는 신문법이다.
 class Canvas {
   constructor() {
@@ -19,6 +13,8 @@ class Canvas {
     //  //this 는 새로 생성되는 object를 뜻한다. this.age = 15 이렇게 새로 생성되는 object에 값 부여 가능
     this.canvas.style.width = 1380+"px";
     this.canvas.style.aspectRatio = 1.867388362652233/1;
+    this.canvas.style.position = 'absolute';
+    this.canvas.style.zIndex = -50
     this.canvas.style.backgroundColor = '#f2f2f2';
     this.ctx = this.canvas.getContext("2d");
     document.body.appendChild(this.canvas);

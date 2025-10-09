@@ -453,19 +453,34 @@ body {
 
 
 
+
 /*section04*/
 .section04{ 
    width: 100%;
-   height: fit-content;
+   height: fit-content;  
+   position: relative;
+   background-color:  red;
 }
 
 
 .section04Contents{
    width: 1380px;
-   aspect-ratio: 1.2454/1;
-   position: relative;
+   aspect-ratio: 4.7586/1;
    margin: 0 auto;
-   margin-top: 49px;
-   border: 1px solid red;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   top:800px;
+   border: 1px solid blue;
 }
 
+#redBall{
+width: 596px;
+aspect-ratio: 1/1;
+position: absolute;
+bottom: 450px;
+left: 25%;
+transform: translateX(-25%);
+z-index: 15;
+
+}
