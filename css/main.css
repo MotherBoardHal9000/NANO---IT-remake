@@ -384,11 +384,11 @@ body {
 
 .section03Contents{
    width: 1380px;
-   aspect-ratio: 1.6103/1;
+   aspect-ratio: 1.688/1;
    margin: 0 auto;
    position: relative;
    border-top: 1px solid var(--black);
-      border-bottom: 1px solid var(--black);
+   border-bottom: 1px solid var(--black);
 }
 
 
@@ -424,14 +424,25 @@ body {
 .technology_List{
    width:940px;
    aspect-ratio: 1.100/1;
-   border: 1px solid red;
    float: right;
    
 }
 
 
+.techList{
+   width: 935px;
+   aspect-ratio: 4.5869/1;
+   border-bottom: 1px solid var(--black);
+   display: flex;
+   justify-items: last baseline;
+   padding-top: 4.5%;
+}
 
+.techList:nth-child(4){border-bottom: none;}
 
+.techList p{font-size: 2.5rem; font-weight: 400;  padding-right: 5%; }
+
+.techList span{ letter-spacing: -2.5%; text-align: justify;}
 
 
 
@@ -453,4 +464,5 @@ body {
    aspect-ratio: 1.2454/1;
    position: relative;
    margin: 0 auto;
+   border: 1px solid red;
 }
