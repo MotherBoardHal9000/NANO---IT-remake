@@ -472,6 +472,24 @@ body {
    border: 1px solid blue;
 }
 
+
+@keyframes UpandDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+
+
+
 #redBall{
 width: 596px;
 aspect-ratio: 1/1;
@@ -479,5 +497,6 @@ position: absolute;
 bottom: 105%;
 left: 25%;
 transform: translateX(-25%) , translateY(-105%);
+ animation: UpandDown 3s infinite;
 z-index: 15;
 }
