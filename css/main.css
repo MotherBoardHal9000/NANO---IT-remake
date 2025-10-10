@@ -32,14 +32,15 @@ path {
   
 }
 
-html{position: relative;}
 
 
 canvas{  position: absolute;
          left:50%;
-         transform: translateX(-50%);
-         margin-top: 49px;}
+         bottom: 28.2%;
+         transform: translateX(-50%);  
+         z-index: -50;
 
+       }
 
 body {
    font-family: 'Pretendard', 'Noto Sans TC', '맑은 고딕', sans-serif;
@@ -459,17 +460,14 @@ body {
    width: 100%;
    height: fit-content;  
    position: relative;
-   background-color:  red;
 }
 
 
 .section04Contents{
    width: 1380px;
-   aspect-ratio: 4.7586/1;
+   aspect-ratio: 0.59766/1;
    margin: 0 auto;
-   position: absolute;
-   left: 50%;
-   transform: translateX(-50%);
+   position:relative;
    top:800px;
    border: 1px solid blue;
 }
@@ -478,9 +476,8 @@ body {
 width: 596px;
 aspect-ratio: 1/1;
 position: absolute;
-bottom: 450px;
+bottom: 105%;
 left: 25%;
-transform: translateX(-25%);
+transform: translateX(-25%) , translateY(-105%);
 z-index: 15;
-
 }

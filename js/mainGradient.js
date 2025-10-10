@@ -132,4 +132,3 @@ class GlowParticle {
     ctx.fill();
   }
 }
-
