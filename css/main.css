@@ -495,8 +495,90 @@ width: 596px;
 aspect-ratio: 1/1;
 position: absolute;
 bottom: 105%;
-left: 25%;
-transform: translateX(-25%) , translateY(-105%);
+left: 12%;
+transform: translateX(-12%) , translateY(-105%);
  animation: UpandDown 3s infinite;
 z-index: 15;
+}
+
+
+#cristal{
+width: 246px;
+aspect-ratio: 1/1;
+position: absolute;
+bottom: 95%;
+left: 35%;
+transform: translateX(-35%) , translateY(-95%);
+}
+
+
+#bubble{
+   width: 370px;
+   aspect-ratio: 1/1;
+   position: absolute;
+   bottom: 109%;
+   left: 0;
+   transform:translateY(-109%);
+   animation: UpandDown 2.5s infinite;
+}
+
+
+#bubbleII{
+   width: 590px;
+   aspect-ratio: 1/1;
+   position: absolute;
+   top: -33.33%;
+   rotate: 90deg;
+   left: 0;
+}
+
+
+#bubbleIII{
+   width: 490px;
+   aspect-ratio: 1/1;
+   position: absolute;
+   top: -18.33%;
+   left: 0;
+}
+
+
+#cosmos_Paper_Lefttop{
+    width: 390px;
+   aspect-ratio: 1/1;
+   position: absolute;
+   top: -33.33%;
+   left: 0;
+   z-index: -10;
+}
+
+#flying_Paper{
+   width: 290px;
+   aspect-ratio: 1/1;
+   position: absolute;
+   bottom: 120%;
+   left: 40%;
+   transform:translateY(-120%);
+   animation: UpandDown 2.8s infinite;
+}
+
+
+
+#bubble_Right{
+   width: 480px;
+   aspect-ratio: 1/1;
+    position: absolute;
+   bottom: 115%;
+   right: 0;
+   transform:translateY(-115%);
+   animation: UpandDown 1.5s infinite;
+}
+
+#red_Bubble{
+   width: 540px;
+   aspect-ratio: 1/1;
+    position: absolute;
+   bottom: 94%;
+   right: 20%;
+   transform:translateY(-94%);
+   animation: UpandDown 1.8s infinite;
 }
