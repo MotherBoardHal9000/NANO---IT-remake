@@ -245,6 +245,7 @@ body {
    font-size: 1.5rem; 
    font-weight: 500; 
    letter-spacing: -2.5%;
+   line-height: 140%;
    text-align: left; 
    position: absolute; 
    left: 0; 
@@ -255,6 +256,7 @@ body {
    font-size: 1.5rem; 
    font-weight: 500; 
    letter-spacing: -2.5%;
+   line-height: 140%;
    text-align: center; 
    position: absolute; 
    left: 50%; 
@@ -269,6 +271,7 @@ body {
    font-size: 1.5rem; 
    font-weight: 500; 
    letter-spacing: -2.5%;
+   line-height: 140%;
    text-align: right; 
    position: absolute; 
    right: 0; 
@@ -456,20 +459,21 @@ body {
 
 
 /*section04*/
-.section04{ 
+.section_Other_Remain{ 
    width: 100%;
    height: fit-content;  
    position: relative;
 }
 
 
-.section04Contents{
+.section_Other_Remain_Contents{
    width: 1380px;
    aspect-ratio: 0.59766/1;
    margin: 0 auto;
    position:relative;
    top:800px;
-   border: 1px solid blue;
+   border-left: 1px solid blue;
+   border-right: 1px solid blue;
 }
 
 
@@ -506,9 +510,9 @@ z-index: 15;
 width: 246px;
 aspect-ratio: 1/1;
 position: absolute;
-bottom: 95%;
+bottom: 97%;
 left: 35%;
-transform: translateX(-35%) , translateY(-95%);
+transform: translateX(-35%) , translateY(-97%);
 }
 
 
@@ -582,3 +586,31 @@ transform: translateX(-35%) , translateY(-95%);
    transform:translateY(-94%);
    animation: UpandDown 1.8s infinite;
 }
+
+
+
+/*section_Other_Remain_Contents_Text*/
+.section_Other_Remain_Contents_Text{
+   width: 1380px;
+   aspect-ratio: 4.92857/1;
+   position: absolute;
+   top: 34.6%;
+   left: 50%;
+   transform: translateX(-50%);
+   border-bottom: #333333 1px solid;
+   padding-bottom:40px ;
+}
+
+.section_Other_Remain_Contents_Text .text{display:inline-flex;width: 295px; height: fit-content; font-weight: 300; line-height: 140%; letter-spacing: -2.5%; 
+}
+
+.section_Other_Remain_Contents_Text .textII{ display:inline-flex;width: 451px; height: fit-content; font-weight: 500; position: absolute; top: 0; right: 0; align-self: flex-start; line-height: 140%; letter-spacing: -2.5%;
+}
+
+.section_Other_Remain_Contents_Text .text p{color: #333333; padding-right: 20px; font-weight: 300; text-align: left; line-height: 140%; letter-spacing: -2.5%;
+}
+
+.section_Other_Remain_Contents_Text h4{font-size: 2.2rem; font-weight: 500; width: fit-content;}
+
+.section_Other_Remain_Contents_Text h5{font-size: 1.7rem; font-weight: 400; width: fit-content; padding-top: 10px; padding-bottom: 10px; color: #a3a3a3;}
+
