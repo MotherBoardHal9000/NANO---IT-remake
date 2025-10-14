@@ -595,6 +595,7 @@ transform: translateX(-35%) , translateY(-97%);
    left: 50%;
    transform: translateX(-50%);
    padding-bottom:40px ;
+   
 }
 
 .section_Other_Remain_Contents_Text .text{display:inline-flex;width: 295px; height: fit-content; font-weight: 300; line-height: 140%; letter-spacing: -2.5%; 
@@ -618,6 +619,8 @@ transform: translateX(-35%) , translateY(-97%);
    width: 1380px;
    aspect-ratio: 2.82786/1;
    margin-top: 78px;
+   border-top: 1px solid var(--black);
+
 }
 
 .solution_Text h3{font-size: 2.2rem; font-weight: 500; width: fit-content; margin-top: 133px; margin-bottom: 12px;}
@@ -654,7 +657,7 @@ justify-content: space-between;
    font-weight: 400;
    position: absolute;
    left: 0;
-   bottom: 40.5%;
+   bottom: 39.3%;
    background-color: #ffffff;
    }
 
