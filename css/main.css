@@ -175,6 +175,7 @@ body {
    right: 7%;
    transform: translateX(-10%);
    rotate:8.1deg;
+   opacity: 0;
    z-index: 12;
 }
 
@@ -189,6 +190,30 @@ body {
    transform: translateX(-40%);
    rotate:210deg;
    z-index: -2;
+}
+
+#flower06{
+    width: 190px;
+   aspect-ratio: 0.9034/1;
+   position: absolute;
+   top: 43.6%;
+   right: 27%;
+   transform: translateX(-40%);
+   rotate:28deg;
+   opacity: 0;
+   z-index: -2;
+}
+
+#flower07{
+    width: 180px;
+   aspect-ratio: 0.9034/1;
+   position: absolute;
+   top: 35%;
+   right: 22%;
+   transform: translateX(-40%);
+   rotate:-13deg;
+   z-index: -10;
+   opacity: 60%;
 }
 
 
@@ -282,7 +307,6 @@ body {
 .section02{
    width: 100vw;
    height:fit-content;
-
 }
 
 .section02Contents{
@@ -290,8 +314,6 @@ body {
    aspect-ratio: 1.899/1;
    margin: 0 auto;
    position: relative;
-  
- 
 }
 
 .section02Contents h3{
@@ -323,9 +345,9 @@ body {
    position: relative;
    left: 50%;
    transform: translateX(-50%);
-   border-top: 1px solid black;
    overflow-x: hidden;
    margin-bottom: 50px;
+   border-top: #333333;
 }
 
 .section02ContentsCarousell h3{
@@ -382,6 +404,7 @@ body {
    position: absolute;
    left: 0;
    bottom: -150px;
+   z-index: 9900;
 }
 
 /*section03*/
@@ -594,7 +617,6 @@ transform: translateX(-35%) , translateY(-97%);
    top: 34.6%;
    left: 50%;
    transform: translateX(-50%);
-   padding-bottom:40px ;
    
 }
 
@@ -657,7 +679,7 @@ justify-content: space-between;
    font-weight: 400;
    position: absolute;
    left: 0;
-   bottom: 39.3%;
+   top:43.2%;
    background-color: #ffffff;
    }
 
@@ -695,11 +717,41 @@ justify-content: space-between;
    margin-top: 73px;
    position: absolute;
    right: 100px;
-   bottom: 7.55%;
+   bottom: 700px;
 }
 
-.news03 img{width: 869px; margin-bottom: 82px;}
+.news03 img{width: 869px; position: absolute; top: -458px;}
 
-.news03 p{ font-size:1.2rem; font-weight:400; padding-top: 5px;}
-.news03 span{ font-size: 4.8rem; font-weight: 400; margin-top: 10px;}
+.news03 p{ font-size:1.2rem; font-weight:400; margin-top: 185px;}
+.news03 p + p {font-size:4rem; font-weight:400; margin-top: 80px;}
 
+/*brochure*/
+
+.blochure{
+   width: 1380px;
+   aspect-ratio: 3.942857142857143/1;
+   margin-top: 100px;
+   position: relative;
+}
+
+.blochureDownload{
+   position: absolute;
+   right: 0px;
+}
+
+
+.blochureBtn{
+   width: 260px;
+   padding: 15px;
+   border: 1px solid black;
+   text-align: left;
+   margin-top: 24px;
+   margin-right: 24px;
+}
+
+/*footer*/
+.footer{width: 100%;
+height: 404px;
+background-color: #333333;
+position:relative;
+bottom: 0px;}

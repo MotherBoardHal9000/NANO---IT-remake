@@ -37,6 +37,13 @@ function updatePath() {
 }
 
 updatePath(requestAnimationFrame);
+
+
+
+document.getElementById("service").style.zIndex = '1000';
+
+
+
 //
 //메인배너 이미지 애니메이션
 gsap.to("#mainBanner", {
@@ -72,6 +79,20 @@ gsap.to('#flower01', {
         y: 84,
         duration: 1.5,
         rotation: 0,
+      });
+
+gsap.to('#flower04', {
+        y: 0,
+        duration: 1.9,
+        rotation: 0,
+        opacity:1
+      });
+      
+      
+gsap.to('#flower06', {
+        x: 0.01,
+        duration: 1,
+        opacity:1
       });
 //
 //
