@@ -40,7 +40,40 @@ updatePath(requestAnimationFrame);
 
 
 
-document.getElementById("service").style.zIndex = '1000';
+//
+//
+      let sideMenu = document.getElementById("sideMenu");
+      let popupOn = document.getElementById("gnb_Btn");
+      let popupOff = document.getElementById("gnb_Btn_Off");
+      let isSel = true;
+
+      popupOn.addEventListener("click", onClick);
+      popupOff.addEventListener("click", onClick);
+
+      function onClick(addEventListener) {
+        console.log("click");
+
+        if (isSel == true) {
+          isSel = false;
+          gsap.to(sideMenu, { right: 0, duration: 0.2 });
+        } else {
+          isSel = true;
+          gsap.to(sideMenu, { right: -660, duration: 0.2 });
+        }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
