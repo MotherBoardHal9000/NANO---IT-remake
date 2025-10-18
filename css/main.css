@@ -777,5 +777,49 @@ justify-content: space-between;
 .footer{width: 100%;
 height: 404px;
 background-color: #333333;
+color: #ffffff;
 position:relative;
 bottom: 0px;}
+
+
+
+.footer span{
+   font-weight:100 ;
+   position: absolute;
+   right: 30px;
+   bottom: 3px;
+
+
+}
+
+
+
+
+.footerContents{
+   width: 100%;
+   height: 333px;
+   border-top: 1px solid #ffffff;
+   border-bottom: 1px solid #ffffff;
+   position: absolute;
+   bottom: 32px;
+}
+
+
+.footerContents span{
+   font-weight: 100;
+   position: absolute;
+   left: 0px;
+   top: 0;
+   padding: 15px;
+
+}
+
+
+.footerContents p{float: right; padding: 15px; font-weight: 100;}
+
+
+.footerContents img{
+   position: absolute;
+   right: 30px;
+   bottom: 20px;
+}
