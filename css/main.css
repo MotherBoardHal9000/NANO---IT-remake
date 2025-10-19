@@ -85,6 +85,24 @@ body {
 
 
 
+
+#Black-bg-open {
+  width: 100vw;
+  height: 100vh;
+  background-color: #333333;
+  opacity: 70%;
+  transition: all 0.2s;
+  display: none;
+  z-index: 900;
+  bottom: 0px;
+  left: 0px;
+  position: fixed;
+
+}
+
+
+
+
 .inner {
  /*aspect-ratio: 가로비율 / 세로비율*/
    aspect-ratio: 1/0.0600;

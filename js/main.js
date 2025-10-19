@@ -64,7 +64,15 @@ updatePath(requestAnimationFrame);
 
 
 
+    document.getElementById("gnb_Btn").addEventListener("click", function () {
+        document.getElementById("Black-bg-open").style.display = "block";
+      });
 
+      document
+        .getElementById("gnb_Btn_Off")
+        .addEventListener("click", function () {
+          document.getElementById("Black-bg-open").style.display = "none";
+        });
 
 
 
