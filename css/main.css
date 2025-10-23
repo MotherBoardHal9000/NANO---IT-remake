@@ -384,11 +384,9 @@ body {
 .section02ContentsCarousell{
    width: 1380px;
    aspect-ratio: 2.0875/1;
-   position: relative;
-   left: 50%;
-   transform: translateX(-50%);
+   
    overflow-x: hidden;
-   margin-bottom: 50px;
+   margin:0 auto;
    border-top: #333333;
 }
 
@@ -397,7 +395,7 @@ body {
    aspect-ratio: 3.2906/1;
    font-size: 4.59rem;
    font-weight: 400;
-   position: absolute;
+   position: relative;
    top: -38px;
    left: 0;
    background-color: #ffffff;
@@ -406,9 +404,8 @@ body {
 
 
 .carousellContainer{
-   position: relative;
    width: 1380px;
-   aspect-ratio: 2.3193/1;
+   height: fit-content;
    display: flex;
    justify-content: flex-start;
    transition: all 0.7s;
@@ -416,8 +413,8 @@ body {
 
 
 .section02ContentsCarousell img{
-   width: 403px;
-   aspect-ratio: 0.80119/1;
+   width: 400px;
+   height: 530px;
    left: 0;
    top: -10%;
    transform: translateY(10%);
@@ -441,13 +438,24 @@ body {
 
 
 #service{
-   width: fit-content;
-   height: fit-content;
+   font-size: 5rem;
+   font-weight: 400;
+   display: inline-block;
+   margin-bottom: 100px;
    position: absolute;
-   left: 0;
-   bottom: -150px;
-   z-index: 9900;
+   top: 1583px;
+   
 }
+
+
+#line{
+   width: 1090px;
+   height: 1px;
+   background-color: #333333;
+   float: right;
+   margin-top: 1px;
+}
+
 
 /*section03*/
 
@@ -487,13 +495,13 @@ body {
 }
 
 .section03Contents img{
-   margin-top: 50px;
+   margin-top: 65px;
 }
 
 .section03Contents aside{
    width: 402px;
    aspect-ratio: 1.9142/1;
-   padding-top: 24px;
+   padding-top: 28px;
    letter-spacing: -2.5%;
 }
 
@@ -511,7 +519,7 @@ body {
    border-bottom: 1px solid var(--black);
    display: flex;
    justify-items: last baseline;
-   padding-top: 4.5%;
+   padding-top: 6%;
 }
 
 .techList:nth-child(4){border-bottom: none;}
@@ -593,7 +601,7 @@ transform: translateX(-35%) , translateY(-97%);
    width: 590px;
    aspect-ratio: 0.8/1;
    position: absolute;
-   top: -36.55%;
+   top: -36.044%;
    rotate: 90deg;
    left: 0;
 }
@@ -612,7 +620,7 @@ transform: translateX(-35%) , translateY(-97%);
     width: 390px;
    aspect-ratio: 1/1;
    position: absolute;
-   top: -33.33%;
+   top:-33.00111%;
    left: 0;
    z-index: -10;
 }
@@ -802,6 +810,7 @@ bottom: 0px;}
 
 
 .footer span{
+   font-size: 1.4rem;
    font-weight:100 ;
    position: absolute;
    right: 30px;
@@ -824,6 +833,7 @@ bottom: 0px;}
 
 
 .footerContents span{
+    font-size: 1.4rem;
    font-weight: 100;
    position: absolute;
    left: 0px;
@@ -833,7 +843,7 @@ bottom: 0px;}
 }
 
 
-.footerContents p{float: right; padding: 15px; font-weight: 100;}
+.footerContents p{float: right; padding: 15px; font-size: 1.4rem; font-weight: 100;}
 
 
 .footerContents img{
