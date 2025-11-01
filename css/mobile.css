@@ -3,12 +3,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
 
-:root {
+body {
+   font-family: 'Pretendard', 'Noto Sans TC', '맑은 고딕', sans-serif;
+   font-weight: 400;
+   font-size: 1.6rem;
+   line-height: 1.5;
+   letter-spacing: -2.5%;
+   color: var(--black);
+   -ms-overflow-style: none;
+   width: 100%;
+   height: fit-content;
+   position: relative;
+
+}
+    :root {
    --black: #333333;
    --main-red: #E50038;
    --sub-pink: #E3007F;
    --sub-font: 'Noto Sans TC', sans-serif;
 }
+
+::-webkit-scrollbar {
+   display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 767px){
+
 
 svg {
   position: absolute;
@@ -22,6 +46,7 @@ svg {
   z-index: 9999;
   opacity: 30%;
   pointer-events: none;
+  display: none;
 }
 
 path {
@@ -29,6 +54,7 @@ path {
   stroke-width: 5;
   stroke-linecap: round;
   stroke-linejoin: round;
+  display: none;
   
 }
 
@@ -39,36 +65,18 @@ canvas{  position: absolute;
          bottom: 28.2%;
          transform: translateX(-50%);  
          z-index: -50;
+         width: 90%;
 
        }
 
-body {
-   font-family: 'Pretendard', 'Noto Sans TC', '맑은 고딕', sans-serif;
-   font-weight: 400;
-   font-size: 1.6rem;
-   line-height: 1.5;
-   letter-spacing: -2.5%;
-   color: var(--black);
-   overflow-x: hidden;
-   -ms-overflow-style: none;
-   width: 100%;
-   height: auto;
-   position: relative;
-
-}
-
-
-::-webkit-scrollbar {
-   display: none;
-}
 
 
 #sideMenu{
-   width: 660px;
+   width: 100vw;
    height: 100vh;
    background-color: #E50038;
    color: #ffffff;
-   right: -660px;
+   right: -768px;
    position: fixed;
    z-index: 9998;
    font-size: 400;
@@ -87,35 +95,25 @@ body {
 
 
 #Black-bg-open {
-  width: 100vw;
-  height: 100vh;
-  background-color: #333333;
-  opacity: 70%;
-  transition: all 0.2s;
+
   display: none;
-  z-index: 900;
-  bottom: 0px;
-  left: 0px;
-  position: fixed;
 
 }
-
 
 
 
 .inner {
- /*aspect-ratio: 가로비율 / 세로비율*/
-   aspect-ratio: 1/0.0600;
-   height: 84px;
-   margin: 0 auto;
+
+   display: none;
+   height: 44px;
    display: flex;
-   justify-content: space-between;
    align-items: center;
 }
 
 .inner h1{
-    width: 160px;
+    width: 90px;
     height: 100%;
+    margin-left: 10px;
    
 }
 
@@ -126,9 +124,8 @@ body {
 
 #header {
     /*aspect-ratio: 가로비율 / 세로비율*/
-   width: 100%;
-   aspect-ratio: 30.642/1;
-   margin: 0 auto;
+   width: 100vw;
+   aspect-ratio: 8.52272/1;
    z-index: 99;
    transition: all 0.5s;
    border-bottom:1.5px solid var(--black);
@@ -139,26 +136,43 @@ body {
 
 
 .gnb{
-   width: fit-content;
-   display: flex;
-   align-items: center;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    position: absolute;
+    left: 35%;
+    
+}
+
+.gnb ul{
+    width: 100%;
+    height: fit-content;
+    position: absolute;
+}
+
+
+.gnb nav{
+    width: 100%;
+    height: fit-content;
+
+    
 }
 
 .gnb li a{
-   width: fit-content;
    color: #a3a3a3;
-   margin: 6px;
    font-weight: 500;
+   width: fit-content;
+   margin: 2px;
+   border: 1px solid red;
 }
 
 
 #gnb_Btn{
-   padding: 30 0 30 30px;
    font-size: 1.5rem;
    font-weight: 700;
    cursor: pointer;
-   float: right;
-   margin-left: 138px;
+   margin-bottom: 30px;
+
 }
 
 
@@ -174,30 +188,33 @@ body {
 
 
 .section01Contents{
-    width: 1360px;
-    aspect-ratio: 1.5185/1;
+    width: 100vw;
+    aspect-ratio: 0.6818181818181818/1;
     margin: 0 auto;
      position: relative;
 }
 
 
 #flower01 {
-   width: 330px;
-   height: 120px;
+   width: 238px;
+   height: 86px;
    position: absolute;
-   left: 0;
+   left: 69%;
+   top: -40px;
+
 }
 
 
  #flower02{
-   width: 147.55px;
+   width: 105.55px;
    aspect-ratio: 0.7666/1;
    position: absolute;
-   bottom: 2.6%;
-   left: 30%;
-   transform: translateX(-30%);
+   bottom: -5%;
+   left: 60%;
+   transform: translateX(-60%);
    rotate: 135deg;
    z-index: 10;
+
 }
 
  #flower03{
@@ -210,16 +227,17 @@ body {
    rotate: 430deg;
    opacity: 80%;
    z-index: 10;
+   display: none;
 }
 
  #flower04{
-    width: 240px;
+    width: 140px;
    aspect-ratio: 0.9034/1;
    position: absolute;
-   top: 23.6%;
-   right: 7%;
+   top: 15.5%;
+   left: -12%;
    transform: translateX(-10%);
-   rotate:8.1deg;
+   rotate:-60deg;
    opacity: 0;
    z-index: 12;
 }
@@ -227,26 +245,11 @@ body {
 
 
 #flower05{
-    width: 140px;
-   aspect-ratio: 0.9034/1;
-   position: absolute;
-   top: 23.6%;
-   right: 40%;
-   transform: translateX(-40%);
-   rotate:210deg;
-   z-index: -2;
+   display: none;
 }
 
 #flower06{
-    width: 190px;
-   aspect-ratio: 0.9034/1;
-   position: absolute;
-   top: 43.6%;
-   right: 27%;
-   transform: translateX(-40%);
-   rotate:28deg;
-   opacity: 0;
-   z-index: -2;
+   display: none;
 }
 
 #flower07{
@@ -265,16 +268,14 @@ body {
 
 
 .utill{
-   width: 1160.9px;
-   aspect-ratio: 3.869/1;
-   text-align: center;  
-   line-height:130px ;  
-   font-size: 14rem; 
-   font-weight:900;
+
+   text-align: left;  
+   font-size: 5.5rem; 
+   font-weight:1000;
    position: absolute;
-   top:80px ;
-   left: 50%;
-   transform: translateX(-50%);
+   top:6px ;
+   left: 5%;
+   transform: translateX(-0%);
    z-index: 11;
    margin-top: 7px;
    background: transparent;
@@ -282,91 +283,74 @@ body {
 
 
 .utill ~ .utill{
-      width: 1160.9px;
-   aspect-ratio: 3.869/1;
-   text-align: center;  
-   line-height:130px ;  
-   font-size: 14rem; 
-   font-weight:900;
+
+  text-align: left; 
+    font-size: 5.5rem; 
+   font-weight:1000;
    position: absolute;
-   top:210px ;
-   left: 50%;
-   transform: translateX(-50%);
+   top:62px ;
+   left: 5%;
+   transform: translateX(-0%);
    z-index: 11;
-   margin-top: 0px;
    background: transparent;
 }
 
 
 .section01Contents #mainBanner{
-   width: 484px;
-   aspect-ratio: 1/1;
-   position: absolute;
+   width: 90%;
+   height: fit-content;
+   position: relative;
    left: 50%;
-   top: 276px;
+   top: 162px;
    transform: translateX(-50%);
    object-fit: cover;
-   z-index: 1;
+   z-index: 0;
 }
 
 
 
 .section01Contents article{ 
-   font-size: 1.5rem; 
+   font-size: 1.3rem; 
    font-weight: 500; 
    letter-spacing: -2.5%;
    line-height: 140%;
    text-align: left; 
    position: absolute; 
-   left: 0; 
-   bottom: 45px;}
+   left: 5%; 
+   bottom: 22px;}
 
 
 .section01Contents p{ 
-   font-size: 1.5rem; 
-   font-weight: 500; 
-   letter-spacing: -2.5%;
-   line-height: 140%;
-   text-align: center; 
-   position: absolute; 
-   left: 50%; 
-   transform: translateX(-50%);
-   bottom: 45px;}
+display: none;}
 
 
 
 
 
 .section01Contents article ~ article{
-   font-size: 1.5rem; 
-   font-weight: 500; 
-   letter-spacing: -2.5%;
-   line-height: 140%;
-   text-align: right; 
-   position: absolute; 
-   right: 0; 
-   bottom: 45px;
+   display: none;
 }
 
 /*section02*/
 .section02{
-   width: 100vw;
-   height:fit-content;
+   width: 100%;
+   aspect-ratio: 0.3609/1;
+   position: relative;
 }
 
 .section02Contents{
-   width: 1380px;
-   aspect-ratio: 1.899/1;
+   width: 100%;
+   height: 724px;
+   height: 315px;
    margin: 0 auto;
    position: relative;
 }
 
 .section02Contents h3{
-   width: 628px;
-   aspect-ratio: 9.8125/1;
-   font-size: 4.59rem;
+   width: 328px;
+   font-size: 2.3rem;
    font-weight: 500;
-   position: absolute;
+   position: relative;
    top: 27px;
    left: 50%;
    transform: translateX(-50%);
@@ -374,32 +358,28 @@ body {
 
 
 .section02Contents img{
-   width: 1380px;
-   aspect-ratio: 2.533/1;
+   width: 90%;
+   aspect-ratio: 1.71717/1;
    position: absolute;
    left: 50%;
    transform: translateX(-50%);
-   bottom: 58px;
+   bottom: 6px;
    object-fit: cover;
    
 }
 
 .section02ContentsCarousell{
-   width: 1380px;
-   aspect-ratio: 2.0875/1;
-   
-   overflow-x: hidden;
-   margin:0 auto;
+   width: 100%;
+   height: 728px;
    border-top: #333333;
 }
 
 .section02ContentsCarousell h3{
    width: 320px;
-   aspect-ratio: 3.2906/1;
+    height: 34px;
    font-size: 4.59rem;
    font-weight: 400;
    position: relative;
-   top: -38px;
    left: 0;
    background-color: #ffffff;
    
@@ -407,56 +387,47 @@ body {
 
 
 .carousellContainer{
-   width: 1380px;
-   height: fit-content;
+   width: 90%;
+   margin: 0 auto;
+   height: 728px;
    display: flex;
-   justify-content: flex-start;
-   transition: all 0.7s;
+   flex-direction: column;
 }
 
 
 .section02ContentsCarousell img{
-   width: 400px;
-   height: 530px;
-   left: 0;
-   top: -10%;
-   transform: translateY(10%);
-   margin-right: 24px;
-   transition: all 0.7s;  
+   width: 100%;
+   height: 170px;
+   margin-bottom: 12px;
+   flex-grow: 1;
+   object-position: center;
 }
 
 
 
 .slideBtn{
-   width: 110px;
-   aspect-ratio: 2.0370/1;
-   position: absolute;
-   top: 1940px;
-   left: 22%;
-   transform: translateX(-22%);
-   z-index: 10;
-   display: flex;
-   justify-content: space-between;
+display: none;
 }
 
 
 #service{
-   font-size: 5rem;
+   width: 114px;
+   height: 22px; 
+   font-size: 2rem;
    font-weight: 400;
-   display: inline-block;
-   margin-bottom: 100px;
-   position: absolute;
-   top: 1583px;
+   position: relative;
+   left: 5%;
+   top: 0px;
+   background-color: white;
+
+   margin-bottom: 0px;
    
 }
 
 
 #line{
-   width: 1090px;
-   height: 1px;
-   background-color: #333333;
-   float: right;
-   margin-top: 1px;
+display: none;
+
 }
 
 
@@ -471,10 +442,11 @@ body {
 
 
 .section03Contents{
-   width: 1380px;
+   width: 100vw;
    aspect-ratio: 1.688/1;
    margin: 0 auto;
    position: relative;
+   top: 897px;
    border-top: 1px solid var(--black);
    border-bottom: 1px solid var(--black);
 }
@@ -568,7 +540,7 @@ body {
 
 
 #redBall{
-width: 596px;
+width: 355px;
 aspect-ratio: 1/1;
 position: absolute;
 bottom: 105%;
@@ -580,7 +552,7 @@ z-index: 15;
 
 
 #cristal{
-width: 246px;
+width: 94px;
 aspect-ratio: 1/1;
 position: absolute;
 bottom: 97%;
@@ -853,4 +825,11 @@ bottom: 0px;}
    position: absolute;
    right: 30px;
    bottom: 20px;
+}
+
+
+
+
+
+
 }
