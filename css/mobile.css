@@ -26,6 +26,13 @@ body {
 ::-webkit-scrollbar {
    display: none;
 }
+
+
+
+
+
+@media screen and (max-width: 767px){
+
 canvas{  position: absolute;
          left:50%;
          bottom: 28.2%;
@@ -37,11 +44,6 @@ canvas{  position: absolute;
 
        }
 
-
-
-
-
-@media screen and (max-width: 767px){
 
 
 svg {
@@ -706,9 +708,9 @@ flex-direction: column;
 
 
 
-#solution_Box_Left{width: 678px; aspect-ratio:1.83739837398374/1; color: #ffffff; padding: 20px; background-color: #E50038; }
+#solution_Box_Left{width: 85vw; aspect-ratio:1.83739837398374/1; font-size: 1rem; color: #ffffff; padding: 20px; background-color: #E50038; margin-bottom: 24px; }
 #solution_Box_Left h2{margin-bottom: 12px;}
-#solution_Box_Right{width: 678px; aspect-ratio:1.83739837398374/1; color: #ffffff; padding: 20px; background-color: #E3007F;}
+#solution_Box_Right{width: 85vw; aspect-ratio:1.83739837398374/1; font-size: 1rem; color: #ffffff; padding: 20px; background-color: #E3007F; margin-bottom: 24px; }
 #solution_Box_Right h2{margin-bottom: 12px;}
 
 /*news_Letter*/
