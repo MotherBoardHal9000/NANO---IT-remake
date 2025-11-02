@@ -2,6 +2,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
+  .desktop { display: block; }
+  .mobile { display: none; }
+
 
 :root {
    --black: #333333;
@@ -39,8 +42,14 @@ canvas{  position: absolute;
          bottom: 28.2%;
          transform: translateX(-50%);  
          z-index: -50;
-
+         
        }
+
+
+canvas ~ canvas{ display: none;}
+
+
+
 
 body {
    font-family: 'Pretendard', 'Noto Sans TC', '맑은 고딕', sans-serif;
@@ -62,8 +71,7 @@ body {
    display: none;
 }
 
-
-#sideMenu{
+   #sideMenu{
    width: 660px;
    height: 100vh;
    background-color: #E50038;
@@ -854,3 +862,5 @@ bottom: 0px;}
    right: 30px;
    bottom: 20px;
 }
+
+
