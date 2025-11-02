@@ -79,8 +79,8 @@ updatePath(requestAnimationFrame);
 
 
 
-if (matchMedia("only screen and (max-width: 767px)").matches){
-        let sideMenu = document.getElementById("mobileSideMenu");
+if (matchMedia("only screen and (max-width: 480px)").matches){
+        let mobileSideMenu = document.getElementById("mobileSideMenu");
       let popupOn = document.getElementById("mobile_gnb_Btn");
       let popupOff = document.getElementById("mobile_gnb_Btn_Off");
       let isSel = true;
@@ -93,10 +93,10 @@ if (matchMedia("only screen and (max-width: 767px)").matches){
 
         if (isSel == true) {
           isSel = false;
-          gsap.to(mobileSideMenu, { right: 755, duration: 0.9 });
+          gsap.to(mobileSideMenu, { right: 0, duration: 0.9 });
         } else {
           isSel = true;
-          gsap.to(mobileSideMenu, { right: -755, duration: 0.9 });
+          gsap.to(mobileSideMenu, { right: -480, duration: 0.9 });
         }
       }
 

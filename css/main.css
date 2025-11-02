@@ -72,11 +72,11 @@ body {
 }
 
    #sideMenu{
-   width: 660px;
+   width: 680px;
    height: 100vh;
    background-color: #E50038;
    color: #ffffff;
-   right: -660px;
+   right: -680px;
    position: fixed;
    z-index: 9998;
    font-size: 400;
