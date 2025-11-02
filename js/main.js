@@ -79,7 +79,42 @@ updatePath(requestAnimationFrame);
 
 
 
+if (matchMedia("only screen and (max-width: 767px)").matches){
+        let sideMenu = document.getElementById("sideMenu");
+      let popupOn = document.getElementById("gnb_Btn");
+      let popupOff = document.getElementById("gnb_Btn_Off");
+      let isSel = true;
 
+      popupOn.addEventListener("click", onClick);
+      popupOff.addEventListener("click", onClick);
+
+      function onClick(addEventListener) {
+        console.log("click");
+
+        if (isSel == true) {
+          isSel = false;
+          gsap.to(sideMenu, { right: 660, duration: 0.2 });
+        } else {
+          isSel = true;
+          gsap.to(sideMenu, { right: -660, duration: 0.2 });
+        }
+      }
+
+
+
+    document.getElementById("gnb_Btn").addEventListener("click", function () {
+        document.getElementById("Black-bg-open").style.display = "block";
+      });
+
+      document
+        .getElementById("gnb_Btn_Off")
+        .addEventListener("click", function () {
+          document.getElementById("Black-bg-open").style.display = "none";
+        });
+
+
+  
+}
 
 
 
