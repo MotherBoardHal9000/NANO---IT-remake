@@ -3,19 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
 
-body {
-   font-family: 'Pretendard', 'Noto Sans TC', '맑은 고딕', sans-serif;
-   font-weight: 400;
-   font-size: 1.6rem;
-   line-height: 1.5;
-   letter-spacing: -2.5%;
-   color: var(--black);
-   -ms-overflow-style: none;
-   width: 100%;
-   height: fit-content;
-   position: relative;
 
-}
     :root {
    --black: #333333;
    --main-red: #E50038;
@@ -32,6 +20,23 @@ body {
 
 
 @media screen and (max-width: 767px){
+
+
+body {
+   font-family: 'Pretendard', 'Noto Sans TC', '맑은 고딕', sans-serif;
+   font-weight: 400;
+   font-size: 1.6rem;
+   line-height: 1.5;
+   letter-spacing: -2.5%;
+   color: var(--black);
+   -ms-overflow-style: none;
+   overflow-x: hidden;
+   width: 100%;
+   height: fit-content;
+   position: relative;
+
+}
+
 
 
   .desktop { display: none; }
@@ -73,7 +78,7 @@ canvas { display: block;
          height: 152px;}
 
 
-#sideMenu{
+#mobileSideMenu{
    width: 100vw;
    height: 100vh;
    background-color: #E50038;
@@ -86,7 +91,7 @@ canvas { display: block;
    padding-top: 16px;
 }
 
-#gnb_Btn_Off{
+#mobile_gnb_Btn_Off{
    color: #ffffff;
    font-weight: 100;
    line-height: 2.4;
@@ -98,7 +103,7 @@ canvas { display: block;
 
 #Black-bg-open {
 
-  display: block;
+  display: none;
 
 }
 
@@ -170,12 +175,13 @@ canvas { display: block;
 }
 
 
-#gnb_Btn{
+#mobile_gnb_Btn{
    font-size: 1.5rem;
    font-weight: 700;
    cursor: pointer;
-   margin-bottom: 30px;
-
+   margin-bottom: 100px;
+   left: 190px;
+   position: relative;
 }
 
 

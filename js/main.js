@@ -80,9 +80,9 @@ updatePath(requestAnimationFrame);
 
 
 if (matchMedia("only screen and (max-width: 767px)").matches){
-        let sideMenu = document.getElementById("sideMenu");
-      let popupOn = document.getElementById("gnb_Btn");
-      let popupOff = document.getElementById("gnb_Btn_Off");
+        let sideMenu = document.getElementById("mobileSideMenu");
+      let popupOn = document.getElementById("mobile_gnb_Btn");
+      let popupOff = document.getElementById("mobile_gnb_Btn_Off");
       let isSel = true;
 
       popupOn.addEventListener("click", onClick);
@@ -93,24 +93,13 @@ if (matchMedia("only screen and (max-width: 767px)").matches){
 
         if (isSel == true) {
           isSel = false;
-          gsap.to(sideMenu, { right: 660, duration: 0.2 });
+          gsap.to(mobileSideMenu, { right: 755, duration: 0.9 });
         } else {
           isSel = true;
-          gsap.to(sideMenu, { right: -660, duration: 0.2 });
+          gsap.to(mobileSideMenu, { right: -755, duration: 0.9 });
         }
       }
 
-
-
-    document.getElementById("gnb_Btn").addEventListener("click", function () {
-        document.getElementById("Black-bg-open").style.display = "block";
-      });
-
-      document
-        .getElementById("gnb_Btn_Off")
-        .addEventListener("click", function () {
-          document.getElementById("Black-bg-open").style.display = "none";
-        });
 
 
   
