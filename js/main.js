@@ -58,7 +58,7 @@ updatePath(requestAnimationFrame);
           gsap.to(sideMenu, { right: 0, duration: 0.2 });
         } else {
           isSel = true;
-          gsap.to(sideMenu, { right: -660, duration: 0.2 });
+          gsap.to(sideMenu, { right: -680, duration: 0.2 });
         }
       }
 

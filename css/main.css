@@ -58,7 +58,6 @@ body {
    line-height: 1.5;
    letter-spacing: -2.5%;
    color: var(--black);
-   overflow-x: hidden;
    -ms-overflow-style: none;
    width: 100%;
    height: auto;

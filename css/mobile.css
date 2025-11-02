@@ -30,7 +30,6 @@ body {
    letter-spacing: -2.5%;
    color: var(--black);
    -ms-overflow-style: none;
-   overflow-x: hidden;
    width: 100%;
    height: fit-content;
    position: relative;
