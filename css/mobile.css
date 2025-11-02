@@ -32,6 +32,7 @@ body {
    color: var(--black);
    -ms-overflow-style: none;
    overflow-x: hidden;
+   overflow-y: visible;
    width: 100%;
    height: fit-content;
    position: relative;
