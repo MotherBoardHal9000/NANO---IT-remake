@@ -19,7 +19,7 @@
 
 
 
-@media (max-width: 480px){
+@media screen and (max-width: 480px){
 
 
 
@@ -181,9 +181,10 @@ canvas { display: block;
    font-size: 1.5rem;
    font-weight: 700;
    cursor: pointer;
-   margin-bottom: 100px;
+   bottom: 6px;
    left: 190px;
    position: relative;
+   color: #333333;
 }
 
 
@@ -280,7 +281,7 @@ canvas { display: block;
 
 .utill{
    text-align: left;  
-   font-size: 5.5rem; 
+   font-size: 5.25rem; 
    font-weight:900;
    position: absolute;
    top:6px ;
@@ -295,7 +296,7 @@ canvas { display: block;
 .utill ~ .utill{
    display: inline;
    text-align: left; 
-   font-size: 5.5rem; 
+   font-size: 5.25rem; 
    font-weight:900;
    position: absolute;
    top:62px ;
@@ -368,10 +369,11 @@ display: none;}
 
 .section02Contents img{
    width: 90%;
-   aspect-ratio: 1.71717/1;
-   position: absolute;
+   height: 200px;
+   position: relative;
    left: 50%;
    transform: translateX(-50%);
+   top: 58px;
    bottom: 6px;
    object-fit: cover;
    
@@ -380,7 +382,6 @@ display: none;}
 .section02ContentsCarousell{
    width: 90%;
    height: 766px;
-   border-top: #333333;
 }
 
 .section02ContentsCarousell h3{
@@ -428,7 +429,6 @@ display: none;
    left: 5%;
    top: 0px;
    background-color: white;
-
    margin-bottom: 0px;
    
 }
@@ -454,8 +454,7 @@ display: none;
    width: 100vw;
    height: 640px;
    position: relative;
-   border-top: 1px solid var(--black);
-   border-bottom: 1px solid var(--black);
+  
 }
 
 
@@ -502,14 +501,13 @@ display: none;
 .techList{
    width: 90%;
    aspect-ratio: 4.5869/1;
-   border-bottom: 1px solid var(--black);
    display: flex;
    flex-direction: column;
    justify-items: last baseline;
    padding-top: 6%;
 }
 
-.techList:nth-child(4){border-bottom: none;}
+.techList:nth-child(4){border-bottom: 1px solid #333333;}
 
 .techList p{font-size: 2.5rem; font-weight: 400;  padding-right: 5%; }
 
@@ -551,24 +549,24 @@ display: none;
 
 
 #redBall{
-width: 355px;
+width: 345px;
 aspect-ratio: 1/1;
 position: absolute;
-bottom: 255%;
+bottom: 260%;
 left: 12%;
-transform: translateX(-12%) , translateY(-105%);
- animation: UpandDown 3s infinite;
+transform: translateX(-12%) , translateY(-100%);
+ animation: UpandDown 5s infinite;
 z-index: 15;
 }
 
 
 #cristal{
-width: 94px;
+width: 120px;
 aspect-ratio: 1/1;
 position: absolute;
-bottom: 97%;
+bottom: 222%;
 left: 35%;
-transform: translateX(-35%) , translateY(-97%);
+transform: translateX(-35%) , translateY(-222%);
 }
 
 
@@ -655,10 +653,10 @@ transform: translateX(-35%) , translateY(-97%);
 /*section_Other_Remain_Contents_Text*/
 .section_Other_Remain_Contents_Text{
    width: 100%;
-   position: absolute;
+   position: relative;
    top: 34.6%;
    left: 50%;
-   transform: translateX(-50%);
+   transform: translateX(-50%),translateY(-34.6%);
    padding: 5%;
    color: #333333;   
 }
@@ -683,12 +681,11 @@ transform: translateX(-35%) , translateY(-97%);
 .solution_Text{
    width: 338px;
    aspect-ratio: 2.82786/1;
-   margin-top: 78px;
-   border-top: 1px solid var(--black);
+   margin-top: 38px;
 
 }
 
-.solution_Text h3{font-size: 2.2rem; font-weight: 500; width: fit-content; margin-top: 133px; margin-bottom: 12px;}
+.solution_Text h3{font-size: 2.2rem; font-weight: 500; width: fit-content; margin-top: 24px; margin-bottom: 12px;}
 
 .solution_Text p{ font-size: 1.4rem; font-weight: 300; color: #a3a3a3; margin-bottom: 28px;}
 

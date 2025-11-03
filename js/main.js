@@ -93,10 +93,10 @@ if (matchMedia("only screen and (max-width: 480px)").matches){
 
         if (isSel == true) {
           isSel = false;
-          gsap.to(mobileSideMenu, { right: 0, duration: 0.9 });
+          gsap.to(mobileSideMenu, { right: 0, duration: 0.7 });
         } else {
           isSel = true;
-          gsap.to(mobileSideMenu, { right: -480, duration: 0.9 });
+          gsap.to(mobileSideMenu, { right: -480, duration: 0.7 });
         }
       }
 

@@ -42,6 +42,7 @@ canvas{  position: absolute;
          bottom: 28.2%;
          transform: translateX(-50%);  
          z-index: -50;
+         overflow-y: hidden;
          
        }
 
@@ -166,6 +167,7 @@ body {
    cursor: pointer;
    float: right;
    margin-left: 138px;
+   color: #333333;
 }
 
 
@@ -581,7 +583,7 @@ position: absolute;
 bottom: 105%;
 left: 12%;
 transform: translateX(-12%) , translateY(-105%);
- animation: UpandDown 3s infinite;
+ animation: UpandDown 4s infinite;
 z-index: 15;
 }
 
@@ -590,9 +592,9 @@ z-index: 15;
 width: 246px;
 aspect-ratio: 1/1;
 position: absolute;
-bottom: 97%;
+bottom: 124%;
 left: 35%;
-transform: translateX(-35%) , translateY(-97%);
+transform: translateX(-35%) , translateY(-124%);
 }
 
 
@@ -603,7 +605,7 @@ transform: translateX(-35%) , translateY(-97%);
    bottom: 109%;
    left: 0;
    transform:translateY(-109%);
-   animation: UpandDown 2.5s infinite;
+   animation: UpandDown 3.5s infinite;
 }
 
 
@@ -611,7 +613,7 @@ transform: translateX(-35%) , translateY(-97%);
    width: 590px;
    aspect-ratio: 0.8/1;
    position: absolute;
-   top: -36.044%;
+   top: -36.3333%;
    rotate: 90deg;
    left: 0;
 }
@@ -621,7 +623,7 @@ transform: translateX(-35%) , translateY(-97%);
    width: 490px;
    aspect-ratio: 1/1;
    position: absolute;
-   top: -18.33%;
+   top: -14.33%;
    left: 0;
 }
 
@@ -630,7 +632,7 @@ transform: translateX(-35%) , translateY(-97%);
     width: 390px;
    aspect-ratio: 1/1;
    position: absolute;
-   top:-33.00111%;
+   top:-33.1111%;
    left: 0;
    z-index: -10;
 }
@@ -642,7 +644,7 @@ transform: translateX(-35%) , translateY(-97%);
    bottom: 120%;
    left: 40%;
    transform:translateY(-120%);
-   animation: UpandDown 2.8s infinite;
+   animation: UpandDown 3.8s infinite;
 }
 
 
@@ -654,7 +656,7 @@ transform: translateX(-35%) , translateY(-97%);
    bottom: 115%;
    right: 0;
    transform:translateY(-115%);
-   animation: UpandDown 1.5s infinite;
+   animation: UpandDown 4.5s infinite;
 }
 
 #red_Bubble{
@@ -664,19 +666,21 @@ transform: translateX(-35%) , translateY(-97%);
    bottom: 98%;
    right: 20%;
    transform:translateY(-94%);
-   animation: UpandDown 1.8s infinite;
+   animation: UpandDown 3.8s infinite;
 }
 
 
 
 /*section_Other_Remain_Contents_Text*/
 .section_Other_Remain_Contents_Text{
-   width: 1380px;
+   width: 90%;
    aspect-ratio: 4.92857/1;
    position: absolute;
    top: 34.6%;
    left: 50%;
    transform: translateX(-50%);
+   padding-top: 150px;
+   border-top: 1px solid #333333;
    
 }
 
@@ -700,7 +704,7 @@ transform: translateX(-35%) , translateY(-97%);
 .solution_Text{
    width: 1380px;
    aspect-ratio: 2.82786/1;
-   margin-top: 78px;
+   margin-top: 38px;
    border-top: 1px solid var(--black);
 
 }
