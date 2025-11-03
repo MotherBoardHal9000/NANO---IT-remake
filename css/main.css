@@ -35,7 +35,7 @@ path {
 
   .desktop { display: block; }
   .mobile { display: none; }
-   .tablet{display: none;}
+
 
 canvas{  position: absolute;
          left:50%;

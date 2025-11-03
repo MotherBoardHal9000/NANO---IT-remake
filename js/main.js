@@ -79,7 +79,7 @@ updatePath(requestAnimationFrame);
 
 
 
-if (matchMedia("only screen and (max-width: 480px)").matches){
+if (matchMedia("only screen and (max-width: 768px)").matches){
         let mobileSideMenu = document.getElementById("mobileSideMenu");
       let popupOn = document.getElementById("mobile_gnb_Btn");
       let popupOff = document.getElementById("mobile_gnb_Btn_Off");
@@ -108,35 +108,6 @@ if (matchMedia("only screen and (max-width: 480px)").matches){
 
 
 
-if (matchMedia("only screen and (max-width: 786px)").matches){
-        let tabletSideMenu = document.getElementById("tabletSideMenu");
-      let popupOn = document.getElementById("tablet_gnb_Btn");
-      let popupOff = document.getElementById("tablet_gnb_Btn_Off");
-      let isSel = true;
-
-      popupOn.addEventListener("click", onClick);
-      popupOff.addEventListener("click", onClick);
-
-      function onClick(addEventListener) {
-        console.log("click");
-
-        if (isSel == true) {
-          isSel = false;
-          gsap.to(tabletSideMenu, { right: 0, duration: 0.7 });
-        } else {
-          isSel = true;
-          gsap.to(tabletSideMenu, { right: -786, duration: 0.7 });
-        }
-      }
-
-
-
-  
-}
-
-
-
-
 
 //
 //메인배너 이미지 애니메이션
@@ -150,39 +121,17 @@ gsap.to("#mainBanner", {
 
 const duration = 0.8;
 const numberOfTargets = gsap.utils.toArray('.utill > div').length
-const mobileNumberOfTargets = gsap.utils.toArray('.mobileUtill > div').length
-const tabletNumberOfTargets = gsap.utils.toArray('.tabletUtill > div').length
 const pause = 1.5;
 const stagger = duration + pause;
 const delay = stagger * (numberOfTargets - 1) + pause;
 const tl = gsap.timeline();
 
 gsap.set('.utill > div',{transformOrigin:'100% 50% -50'})
-gsap.set('.mobileUtill > div',{transformOrigin:'100% 50% -50'})
-gsap.set('.tabletUtill > div',{transformOrigin:'100% 50% -50'})
 
 tl.from('.utill > div',{
   rotationX:90,
   opacity:0,
   duration:duration,
-  stagger:{
-    each:stagger,
-    repeatDelay:delay
-  }
-})
-tl.from('.mobileUtill > div',{
-  rotationX:90,
-  opacity:0,
-  duration:0.5,
-  stagger:{
-    each:stagger,
-    repeatDelay:delay
-  }
-})
-tl.from('.tabletUtill > div',{
-  rotationX:90,
-  opacity:0,
-  duration:0.5,
   stagger:{
     each:stagger,
     repeatDelay:delay
@@ -236,3 +185,8 @@ document.getElementById("img_Left").addEventListener("click", function () {
 
 
 
+
+
+//스크롤트리거 패럴렉스
+
+window.addEventListener('scroll',function(){ console.log('window.scrollY')})
