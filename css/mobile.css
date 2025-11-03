@@ -18,7 +18,7 @@
 
 
 
-@media screen and (max-width: 768px){
+@media (max-width: 480px) {
 
 
 
@@ -42,12 +42,7 @@ body {
   .desktop { display: none; }
   .mobile { display: block; }
 
-canvas{  position: static;
-         top:55.6666%;
-         transform: translateY(-58.6666%);
-         width: 307px;
-         aspect-ratio: 0.6091269841269841/1;
-         transition: all 1s;
+canvas{  display: none;
        }
 
 
@@ -69,13 +64,7 @@ path {
 
 
 
-canvas { display: block;
- position: absolute;
-         left:50%;
-         bottom: 28.2%;
-         transform: translateX(-50%);  
-         width: 137px;
-         height: 152px;}
+canvas { display: none;}
 
 
 #mobileSideMenu{
@@ -277,12 +266,12 @@ canvas { display: block;
 
 
 
-.utill{
+.mobileUtill{
    text-align: left;  
    font-size: 5.25rem; 
    font-weight:900;
    position: absolute;
-   top:6px ;
+   top:34px ;
    left: 5%;
    transform: translateX(-0%);
    z-index: 11;
@@ -291,13 +280,13 @@ canvas { display: block;
 }
 
 
-.utill ~ .utill{
+.mobileUtill ~ .mobileUtill{
    display: inline;
    text-align: left; 
    font-size: 5.25rem; 
    font-weight:900;
    position: absolute;
-   top:62px ;
+   top:82px ;
    left: 5%;
    transform: translateX(-0%);
    z-index: 11;
@@ -305,7 +294,7 @@ canvas { display: block;
 }
 
 
-.section01Contents #mainBanner{
+.section01Contents #mobileMainBanner{
    width: 90%;
    height: fit-content;
    position: relative;
@@ -514,21 +503,20 @@ display: none;
 .techList span{ letter-spacing: -2.5%; text-align: justify; display: none;}
 
 
-
+#gradient_GIF{width: 90%; height: 504px; position: relative; left: 5%;}
 
 /*section04*/
 .section_Other_Remain{ 
    width: 100vw;
    height: fit-content;  
-   position: relative;
 }
 
 
 .section_Other_Remain_Contents{
    width: 100%;
+   height: 950px;
    margin: 0 auto;
    position:relative;
-   top:1500px;
 }
 
 @keyframes UpandDown {
@@ -552,7 +540,7 @@ display: none;
 width: 345px;
 aspect-ratio: 1/1;
 position: absolute;
-bottom: 260%;
+bottom: 120%;
 left: 12%;
 transform: translateX(-12%) , translateY(-100%);
  animation: UpandDown 5s infinite;
@@ -564,17 +552,17 @@ z-index: 15;
 width: 150px;
 aspect-ratio: 1/1;
 position: absolute;
-bottom: 215%;
+bottom: 100%;
 left: 35%;
 transform: translateX(-35%) , translateY(-215%);
 }
 
 
 #bubble{
-   width: 370px;
+   width: 270px;
    aspect-ratio: 1/1;
    position: absolute;
-   bottom: 208%;
+   bottom: 149%;
    left: 5%;
    transform:translateY(-208%);
    animation: UpandDown 4s infinite;
@@ -588,10 +576,10 @@ transform: translateX(-35%) , translateY(-215%);
 
 
 #bubbleIII{
-   width: 320px;
+   width: 220px;
   aspect-ratio: 1/1;
    position: absolute;
-   bottom: 355%;
+   bottom: 115%;
    left: 9%;
    transform:translateY(-355%);
 }
@@ -603,10 +591,10 @@ transform: translateX(-35%) , translateY(-215%);
 }
 
 #flying_Paper{
-   width: 290px;
+   width: 190px;
    aspect-ratio: 1/1;
    position: absolute;
-  bottom: 255%;
+  bottom: 310%;
    left: 19%;
    transform:translateY(-255%);
    animation: UpandDown 3.8s infinite;
@@ -615,20 +603,20 @@ transform: translateX(-35%) , translateY(-215%);
 
 
 #bubble_Right{
-   width: 440px;
+   width: 340px;
    aspect-ratio: 1/1;
     position: absolute;
-  bottom: 270%;
+  bottom: 340%;
    right: 19%;
    transform:translateY(-270%);
    animation: UpandDown 4.8s infinite;
 }
 
 #red_Bubble{
-   width: 390px;
+   width: 290px;
    aspect-ratio: 1.5/1;
     position: absolute;
-  bottom: 216%;
+  bottom: 315%;
    left: 18%;
    transform:translateY(-216%);
    animation: UpandDown 2.8s infinite;
@@ -639,10 +627,8 @@ transform: translateX(-35%) , translateY(-215%);
 /*section_Other_Remain_Contents_Text*/
 .section_Other_Remain_Contents_Text{
    width: 100%;
-   position: relative;
-   top: 34.6%;
    left: 50%;
-   transform: translateX(-50%),translateY(-34.6%);
+   transform: translateX(-50%);
    padding: 5%;
    color: #333333;   
 }

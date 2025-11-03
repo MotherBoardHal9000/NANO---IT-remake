@@ -18,7 +18,7 @@
 
 
 
-@media  (min-width: 768px) and (max-width: 1280px){
+@media screen and (max-width: 768px){
 
 
 
@@ -39,14 +39,11 @@ body {
 
 
   .desktop { display: none; }
-  .mobile { display: block; }
+  .mobile { display: none; }
+    .tablet { display: block; }
 
-canvas{  position: static;
-         top:55.6666%;
-         transform: translateY(-58.6666%);
-         width: 307px;
-         aspect-ratio: 0.6091269841269841/1;
-         transition: all 1s;
+
+canvas{ display: none;
        }
 
 
@@ -77,12 +74,12 @@ canvas { display: block;
          height: 152px;}
 
 
-#mobileSideMenu{
+#tabletSideMenu{
    width: 100%;
    height: 100vh;
    background-color: #E50038;
    color: #ffffff;
-   right: -480px;
+   right: -1280px;
    position: fixed;
    z-index: 9998;
    font-size: 400;
@@ -90,7 +87,7 @@ canvas { display: block;
    padding-top: 16px;
 }
 
-#mobile_gnb_Btn_Off{
+#tablet_gnb_Btn_Off{
    color: #ffffff;
    font-weight: 100;
    line-height: 2.4;
@@ -131,7 +128,7 @@ canvas { display: block;
 #header {
     /*aspect-ratio: 가로비율 / 세로비율*/
    width: 100vw;
-   aspect-ratio: 8.52272/1;
+   aspect-ratio: 11.52272/1;
    z-index: 99;
    transition: all 0.5s;
    border-bottom:1.5px solid var(--black);
@@ -174,12 +171,12 @@ canvas { display: block;
 }
 
 
-#mobile_gnb_Btn{
+#tablet_gnb_Btn{
    font-size: 1.5rem;
    font-weight: 700;
    cursor: pointer;
    bottom: 6px;
-   left: 190px;
+   left: 360px;
    position: relative;
    color: #333333;
 }
@@ -276,27 +273,27 @@ canvas { display: block;
 
 
 
-.utill{
+.tabletUtill{
    text-align: left;  
-   font-size: 5.25rem; 
+   font-size: 7.25rem; 
    font-weight:900;
    position: absolute;
-   top:6px ;
+   top:10px ;
    left: 5%;
    transform: translateX(-0%);
    z-index: 11;
-   margin-top: 7px;
+   margin-top: 24px;
    background: transparent;
 }
 
 
-.utill ~ .utill{
+.tabletUtill ~ .tabletUtill{
    display: inline;
    text-align: left; 
-   font-size: 5.25rem; 
+   font-size: 7.25rem; 
    font-weight:900;
    position: absolute;
-   top:62px ;
+   top:96px ;
    left: 5%;
    transform: translateX(-0%);
    z-index: 11;
@@ -309,7 +306,7 @@ canvas { display: block;
    height: fit-content;
    position: relative;
    left: 50%;
-   top: 162px;
+   top: 262px;
    transform: translateX(-50%);
    object-fit: cover;
 }
