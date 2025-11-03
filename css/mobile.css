@@ -18,8 +18,7 @@
 
 
 
-
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
 
 
 
@@ -32,7 +31,6 @@ body {
    color: var(--black);
    -ms-overflow-style: none;
    overflow-x: hidden;
-   overflow-y: visible;
    width: 100%;
    height: fit-content;
    position: relative;
@@ -44,11 +42,11 @@ body {
   .desktop { display: none; }
   .mobile { display: block; }
 
-canvas{  position: absolute;
-         top: 2500px;
-         width: 341px;
-         height: 252px;
-         display: block;
+canvas{  position: static;
+         top:55.6666%;
+         transform: translateY(-58.6666%);
+         width: 307px;
+         aspect-ratio: 0.6091269841269841/1;
          transition: all 1s;
        }
 
@@ -344,7 +342,7 @@ display: none;}
 /*section02*/
 .section02{
    width: 100%;
-   aspect-ratio: 0.3609/1;
+   height: fit-content;
    position: relative;
 }
 
@@ -452,21 +450,22 @@ display: none;
 
 .section03Contents{
    width: 100vw;
-   height: 640px;
+   height: 740px;
    position: relative;
+   
   
 }
 
 
 
 .section03Contents h3{  
-   width: 40%;
-   height: 22px; 
+   width: 50%;
+   height: 50px; 
    font-size: 2rem;
    font-weight: 400;
    position: absolute;
-   top: -38px;
-   left: 0;
+   top: -20px;
+   left: 5%;
    background-color: #ffffff;}
 
 
@@ -485,26 +484,27 @@ display: none;
 .section03Contents aside{
    width: 402px;
    aspect-ratio: 1.9142/1;
-   padding-top: 28px;
+   padding-top: 18px;
    letter-spacing: -2.5%;
    display: none;
 }
 
 
 .technology_List{
-   width:90%;
+   width:94%;
    aspect-ratio: 1.100/1;
+   margin: 0 auto;
 
    
 }
 
 .techList{
    width: 90%;
-   aspect-ratio: 4.5869/1;
+   aspect-ratio: 5.5869/1;
    display: flex;
    flex-direction: column;
    justify-items: last baseline;
-   padding-top: 6%;
+   padding-top: 3%;
 }
 
 .techList:nth-child(4){border-bottom: 1px solid #333333;}
@@ -561,12 +561,12 @@ z-index: 15;
 
 
 #cristal{
-width: 120px;
+width: 150px;
 aspect-ratio: 1/1;
 position: absolute;
-bottom: 222%;
+bottom: 215%;
 left: 35%;
-transform: translateX(-35%) , translateY(-222%);
+transform: translateX(-35%) , translateY(-215%);
 }
 
 
@@ -574,42 +574,31 @@ transform: translateX(-35%) , translateY(-222%);
    width: 370px;
    aspect-ratio: 1/1;
    position: absolute;
-   bottom: 109%;
-   left: 0;
-   transform:translateY(-109%);
+   bottom: 208%;
+   left: 5%;
+   transform:translateY(-208%);
    animation: UpandDown 4s infinite;
-   display: none;
+   
 }
 
 
 #bubbleII{
-   width: 590px;
-   aspect-ratio: 0.8/1;
-   position: absolute;
-   top: -36.044%;
-   rotate: 90deg;
-   left: 0;
-      display: none;
+   display: none;
 }
 
 
 #bubbleIII{
-   width: 490px;
-   aspect-ratio: 1/1;
+   width: 320px;
+  aspect-ratio: 1/1;
    position: absolute;
-   top: -18.33%;
-   left: 0;
-      display: none;
+   bottom: 355%;
+   left: 9%;
+   transform:translateY(-355%);
 }
 
 
 #cosmos_Paper_Lefttop{
-    width: 390px;
-   aspect-ratio: 1/1;
-   position: absolute;
-   top:-33.00111%;
-   left: 0;
-   z-index: -10;
+ 
       display: none;
 }
 
@@ -617,35 +606,32 @@ transform: translateX(-35%) , translateY(-222%);
    width: 290px;
    aspect-ratio: 1/1;
    position: absolute;
-   bottom: 120%;
-   left: 40%;
-   transform:translateY(-120%);
-   animation: UpandDown 2.8s infinite;
-      display: none;
+  bottom: 255%;
+   left: 19%;
+   transform:translateY(-255%);
+   animation: UpandDown 3.8s infinite;
 }
 
 
 
 #bubble_Right{
-   width: 480px;
+   width: 440px;
    aspect-ratio: 1/1;
     position: absolute;
-   bottom: 115%;
-   right: 0;
-   transform:translateY(-115%);
-   animation: UpandDown 1.5s infinite;
-      display: none;
+  bottom: 270%;
+   right: 19%;
+   transform:translateY(-270%);
+   animation: UpandDown 4.8s infinite;
 }
 
 #red_Bubble{
-   width: 590px;
+   width: 390px;
    aspect-ratio: 1.5/1;
     position: absolute;
-   bottom: 98%;
-   right: 20%;
-   transform:translateY(-94%);
-   animation: UpandDown 1.8s infinite;
-      display: none;
+  bottom: 216%;
+   left: 18%;
+   transform:translateY(-216%);
+   animation: UpandDown 2.8s infinite;
 }
 
 
@@ -706,7 +692,6 @@ flex-direction: column;
 
 /*news_Letter*/
 .news_Letter{
-
    display: none;
 }
 

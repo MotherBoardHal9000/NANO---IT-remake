@@ -79,7 +79,7 @@ updatePath(requestAnimationFrame);
 
 
 
-if (matchMedia("only screen and (max-width: 480px)").matches){
+if (matchMedia("only screen and (max-width: 768px)").matches){
         let mobileSideMenu = document.getElementById("mobileSideMenu");
       let popupOn = document.getElementById("mobile_gnb_Btn");
       let popupOff = document.getElementById("mobile_gnb_Btn_Off");
