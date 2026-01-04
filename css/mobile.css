@@ -43,13 +43,7 @@ body {
   .desktop { display: none; }
   .mobile { display: block; }
 
-canvas{  position: static;
-         top:55.6666%;
-         transform: translateY(-58.6666%);
-         width: 307px;
-         aspect-ratio: 0.6091269841269841/1;
-         transition: all 1s;
-       }
+canvas{  display: none;}
 
 
 
@@ -67,10 +61,6 @@ path {
 }
 
 
-
-
-
-canvas { display: none;}
 
 
 #mobileSideMenu{
@@ -194,9 +184,8 @@ canvas { display: none;}
 
 .section01Contents{
     width: 100vw;
-    aspect-ratio: 0.6818181818181818/1;
-    margin: 0 auto;
-     position: relative;
+    height: 638px;
+   position: relative;
 }
 
 
@@ -377,6 +366,9 @@ display: none;}
    height: 766px;
 }
 
+
+
+
 .section02ContentsCarousell h3{
    width: 320px;
     height: 34px;
@@ -399,11 +391,8 @@ display: none;}
 
 
 .section02ContentsCarousell img{
-   width: 100%;
-   height: 170px;
-   margin-bottom: 12px;
-   flex-grow: 1;
-   object-position: center;
+ background-color: #a3a3a3;
+ display: none;
 }
 
 
@@ -455,7 +444,7 @@ display: none;
 
 .section03Contents h3{  
    width: 50%;
-   height: 50px; 
+   height: 30px; 
    font-size: 2rem;
    font-weight: 400;
    position: absolute;
@@ -771,8 +760,3 @@ bottom: -330px;}
 }
 
 
-
-
-
-
-}
