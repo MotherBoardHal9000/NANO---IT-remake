@@ -50,7 +50,6 @@ canvas{  position: static;
          aspect-ratio: 0.6091269841269841/1;
          transition: all 1s;
        }
-canvas{ pointer-events: none; }
 
 
 
@@ -71,27 +70,8 @@ path {
 
 
 
-canvas { display: block;
- position: absolute;
-         left:50%;
-         bottom: 28.2%;
-         transform: translateX(-50%);  
-         width: 137px;
-         height: 152px;}
+canvas { display: none;}
 
-#mobileSideMenu{
-  right: 0;
-  transform: translateX(100%);
-  pointer-events: none;     /* 닫혔을 때 터치 가로채지 마 */
-}
-
-#mobileSideMenu.is-open{
-  transform: translateX(0);
-  pointer-events: auto;     /* 열렸을 때만 터치 받기 */
-}
-
-/* 100vh도 모바일에서 종종 문제라 100dvh 추천 */
-#mobileSideMenu{ height: 100dvh; }
 
 #mobileSideMenu{
    width: 100%;
@@ -491,9 +471,9 @@ display: none;
 
 .section03Contents img{
    margin-top: 24px;
-   width: 90%;
-   aspect-ratio: 1/1;
+   width: 90vw;
    margin-left: 24px;
+   object-fit: fill;
 }
 
 .section03Contents aside{
@@ -560,9 +540,6 @@ display: none;
   }
 }
 
-#bubble, #bubbleIII, #bubble_Right, #red_Bubble, #flying_Paper, #cristal{
-  pointer-events: none;
-}
 
 
 
