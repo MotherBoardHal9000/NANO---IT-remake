@@ -38,6 +38,14 @@ body {
 
 }
 
+html, body{
+  height: auto;
+  min-height: 100%;
+}
+
+body{
+  position: static; /* 꼭 필요할 때만 relative */
+}
 
 
   .desktop { display: none; }
@@ -65,7 +73,7 @@ path {
 
 #mobileSideMenu{
    width: 100vw;
-   height: 100vh;
+   height: 100%;
    background-color: #E50038;
    color: #ffffff;
    right: -500px;
@@ -723,3 +731,5 @@ bottom: -330px;}
 
 
 }
+
+
