@@ -96,7 +96,32 @@ if (matchMedia("only screen and (max-width: 480px)").matches){
           gsap.to(mobileSideMenu, { right: 0, duration: 0.7 });
         } else {
           isSel = true;
-          gsap.to(mobileSideMenu, { right: -480, duration: 0.7 });
+          gsap.to(mobileSideMenu, { right: -500, duration: 0.7 });
+        }
+      }
+
+
+
+  
+}
+if (matchMedia("only screen and (max-width: 1280px)").matches){
+        let mobileSideMenu = document.getElementById("mobileSideMenu");
+      let popupOn = document.getElementById("mobile_gnb_Btn");
+      let popupOff = document.getElementById("mobile_gnb_Btn_Off");
+      let isSel = true;
+
+      popupOn.addEventListener("click", onClick);
+      popupOff.addEventListener("click", onClick);
+
+      function onClick(addEventListener) {
+        console.log("click");
+
+        if (isSel == true) {
+          isSel = false;
+          gsap.to(mobileSideMenu, { right: 0, duration: 0.7 });
+        } else {
+          isSel = true;
+          gsap.to(mobileSideMenu, { right: -1280, duration: 0.7 });
         }
       }
 
