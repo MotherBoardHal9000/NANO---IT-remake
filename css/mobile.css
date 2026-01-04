@@ -503,9 +503,8 @@ display: none;
 /*section04*/
 .section_Other_Remain{ 
    width: 100vw;
-   height: 690px;  
+   height: fit-content;  
    position: relative;
- 
 }
 
 
@@ -544,7 +543,7 @@ display: none;
 
 
 #bubble{
-display: none;
+  display: none;
    
 }
 
@@ -555,7 +554,7 @@ display: none;
 
 
 #bubbleIII{
- display: none;
+   display: none;
 }
 
 
@@ -571,8 +570,7 @@ display: none;
 
 
 #bubble_Right{
- display: none;
-}
+display: none;}
 
 #red_Bubble{
 display: none;
@@ -725,4 +723,3 @@ bottom: -330px;}
 
 
 }
-
