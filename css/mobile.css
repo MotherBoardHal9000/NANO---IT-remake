@@ -64,11 +64,11 @@ path {
 
 
 #mobileSideMenu{
-   width: 100%;
+   width: 100vw;
    height: 100vh;
    background-color: #E50038;
    color: #ffffff;
-   right: -480px;
+   right: -500px;
    position: fixed;
    z-index: 9998;
    font-size: 400;
@@ -503,8 +503,9 @@ display: none;
 /*section04*/
 .section_Other_Remain{ 
    width: 100vw;
-   height: fit-content;  
+   height: 690px;  
    position: relative;
+ 
 }
 
 
@@ -533,35 +534,17 @@ display: none;
 
 
 #redBall{
-width: 345px;
-aspect-ratio: 1/1;
-position: absolute;
-bottom: 260%;
-left: 12%;
-transform: translateX(-12%) , translateY(-100%);
- animation: UpandDown 5s infinite;
-z-index: 15;
+display: none;
 }
 
 
 #cristal{
-width: 150px;
-aspect-ratio: 1/1;
-position: absolute;
-bottom: 215%;
-left: 35%;
-transform: translateX(-35%) , translateY(-215%);
+display: none;
 }
 
 
 #bubble{
-   width: 370px;
-   aspect-ratio: 1/1;
-   position: absolute;
-   bottom: 208%;
-   left: 5%;
-   transform:translateY(-208%);
-   animation: UpandDown 4s infinite;
+display: none;
    
 }
 
@@ -572,12 +555,7 @@ transform: translateX(-35%) , translateY(-215%);
 
 
 #bubbleIII{
-   width: 320px;
-  aspect-ratio: 1/1;
-   position: absolute;
-   bottom: 355%;
-   left: 9%;
-   transform:translateY(-355%);
+ display: none;
 }
 
 
@@ -587,35 +565,17 @@ transform: translateX(-35%) , translateY(-215%);
 }
 
 #flying_Paper{
-   width: 290px;
-   aspect-ratio: 1/1;
-   position: absolute;
-  bottom: 255%;
-   left: 19%;
-   transform:translateY(-255%);
-   animation: UpandDown 3.8s infinite;
+  display: none;
 }
 
 
 
 #bubble_Right{
-   width: 440px;
-   aspect-ratio: 1/1;
-    position: absolute;
-  bottom: 270%;
-   right: 19%;
-   transform:translateY(-270%);
-   animation: UpandDown 4.8s infinite;
+ display: none;
 }
 
 #red_Bubble{
-   width: 390px;
-   aspect-ratio: 1.5/1;
-    position: absolute;
-  bottom: 216%;
-   left: 18%;
-   transform:translateY(-216%);
-   animation: UpandDown 2.8s infinite;
+display: none;
 }
 
 
@@ -759,4 +719,10 @@ bottom: -330px;}
    bottom: 20px;
 }
 
+
+
+
+
+
+}
 
