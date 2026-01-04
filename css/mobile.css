@@ -34,6 +34,7 @@ body {
    width: 100%;
    height: fit-content;
    position: relative;
+ 
 
 }
 
@@ -49,6 +50,7 @@ canvas{  position: static;
          aspect-ratio: 0.6091269841269841/1;
          transition: all 1s;
        }
+canvas{ pointer-events: none; }
 
 
 
@@ -77,6 +79,19 @@ canvas { display: block;
          width: 137px;
          height: 152px;}
 
+#mobileSideMenu{
+  right: 0;
+  transform: translateX(100%);
+  pointer-events: none;     /* 닫혔을 때 터치 가로채지 마 */
+}
+
+#mobileSideMenu.is-open{
+  transform: translateX(0);
+  pointer-events: auto;     /* 열렸을 때만 터치 받기 */
+}
+
+/* 100vh도 모바일에서 종종 문제라 100dvh 추천 */
+#mobileSideMenu{ height: 100dvh; }
 
 #mobileSideMenu{
    width: 100%;
@@ -545,6 +560,9 @@ display: none;
   }
 }
 
+#bubble, #bubbleIII, #bubble_Right, #red_Bubble, #flying_Paper, #cristal{
+  pointer-events: none;
+}
 
 
 
@@ -685,9 +703,9 @@ flex-direction: column;
 
 
 
-#solution_Box_Left{width: 85vw; aspect-ratio:1.83739837398374/1; font-size: 1rem; color: #ffffff; padding: 20px; background-color: #E50038; margin-bottom: 24px; }
+#solution_Box_Left{width: 90vw; aspect-ratio:1.83739837398374/1; font-size: 1rem; color: #ffffff; padding: 20px; background-color: #E50038; margin-bottom: 24px; }
 #solution_Box_Left h2{margin-bottom: 12px;}
-#solution_Box_Right{width: 85vw; aspect-ratio:1.83739837398374/1; font-size: 1rem; color: #ffffff; padding: 20px; background-color: #E3007F; margin-bottom: 24px; }
+#solution_Box_Right{width: 90vw; aspect-ratio:1.83739837398374/1; font-size: 1rem; color: #ffffff; padding: 20px; background-color: #E3007F; margin-bottom: 24px; }
 #solution_Box_Right h2{margin-bottom: 12px;}
 
 /*news_Letter*/
