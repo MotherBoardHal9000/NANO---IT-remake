@@ -100,6 +100,12 @@ if (matchMedia("only screen and (max-width: 480px)").matches){
         }
       }
 
+ document.addEventListener('touchstart', (e) => {
+  const t = e.touches[0];
+  const el = document.elementFromPoint(t.clientX, t.clientY);
+  if (!el) return;
+  console.log('TOUCH ON:', el.tagName, el.id, el.className);
+}, { passive: true });
 
 
   
@@ -125,6 +131,12 @@ if (matchMedia("only screen and (max-width: 1280px)").matches){
         }
       }
 
+document.addEventListener('touchstart', (e) => {
+  const t = e.touches[0];
+  const el = document.elementFromPoint(t.clientX, t.clientY);
+  if (!el) return;
+  console.log('TOUCH ON:', el.tagName, el.id, el.className);
+}, { passive: true });
 
 
   
