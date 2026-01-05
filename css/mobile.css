@@ -34,8 +34,7 @@ body {
    width: 100%;
    height: fit-content;
    position: relative;
-   pointer-events: none;
- 
+
 
 }
 
@@ -727,5 +726,3 @@ bottom: -330px;}
 
 
 }
-
-
