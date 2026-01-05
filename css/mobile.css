@@ -34,18 +34,11 @@ body {
    width: 100%;
    height: fit-content;
    position: relative;
+   pointer-events: none;
  
 
 }
 
-html, body{
-  height: auto;
-  min-height: 100%;
-}
-
-body{
-  position: static; /* 꼭 필요할 때만 relative */
-}
 
 
   .desktop { display: none; }
@@ -73,7 +66,7 @@ path {
 
 #mobileSideMenu{
    width: 100vw;
-   height: 100%;
+   height: 100vh;
    background-color: #E50038;
    color: #ffffff;
    right: -500px;
@@ -183,8 +176,8 @@ path {
 
 /*section01*/
 .section01{
-   width: 100%;
-   height: fit-content;
+   width: 100vw;
+   height: 638px;
    border-bottom:1px solid #333333;
   
 }
@@ -192,8 +185,9 @@ path {
 
 .section01Contents{
     width: 100vw;
-    height: 638px;
+   height: 628px;
    position: relative;
+   flex-direction: column;
 }
 
 
@@ -211,7 +205,7 @@ path {
    width: 105.55px;
    aspect-ratio: 0.7666/1;
    position: absolute;
-   bottom: -5%;
+   bottom: -2%;
    left: 60%;
    transform: translateX(-60%);
    rotate: 135deg;
@@ -236,7 +230,7 @@ path {
     width: 140px;
    aspect-ratio: 0.9034/1;
    position: absolute;
-   top: 15.5%;
+   top: 25.5%;
    left: -12%;
    transform: translateX(-10%);
    rotate:-60deg;
@@ -301,6 +295,8 @@ path {
    width: 90%;
    height: fit-content;
    position: relative;
+    flex-direction: column;
+    align-items: center;
    left: 50%;
    top: 162px;
    transform: translateX(-50%);
