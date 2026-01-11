@@ -176,7 +176,7 @@ path {
 /*section01*/
 .section01{
    width: 100vw;
-   height: 638px;
+   aspect-ratio: 0.6679612;
    border-bottom:1px solid #333333;
   
 }
@@ -184,7 +184,7 @@ path {
 
 .section01Contents{
     width: 100vw;
-   height: 628px;
+   aspect-ratio: 0.6679612;
    position: relative;
    flex-direction: column;
 }
@@ -202,9 +202,9 @@ path {
 
  #flower02{
    width: 105.55px;
-   aspect-ratio: 0.7666/1;
+   aspect-ratio: 0.6666/1;
    position: absolute;
-   bottom: -2%;
+   bottom: -5%;
    left: 60%;
    transform: translateX(-60%);
    rotate: 135deg;
@@ -267,7 +267,7 @@ path {
    font-size: 5.25rem; 
    font-weight:900;
    position: absolute;
-   top:6px ;
+   top:14px ;
    left: 5%;
    transform: translateX(-0%);
    z-index: 11;
@@ -282,7 +282,7 @@ path {
    font-size: 5.25rem; 
    font-weight:900;
    position: absolute;
-   top:62px ;
+   top:70px ;
    left: 5%;
    transform: translateX(-0%);
    z-index: 11;
@@ -297,7 +297,7 @@ path {
     flex-direction: column;
     align-items: center;
    left: 50%;
-   top: 162px;
+   top: 28.6%;
    transform: translateX(-50%);
    object-fit: cover;
 }
@@ -312,7 +312,8 @@ path {
    text-align: left; 
    position: absolute; 
    left: 5%; 
-   bottom: 22px;}
+   bottom: 3%;
+   transform: translateY(-3%);}
 
 
 .section01Contents p{ 
@@ -329,14 +330,14 @@ display: none;}
 /*section02*/
 .section02{
    width: 100%;
-   height: fit-content;
+   aspect-ratio: 0.3633;
    position: relative;
 }
 
 .section02Contents{
    width: 100%;
-   height: 724px;
-   height: 315px;
+   
+ aspect-ratio: 0.3633;
    margin: 0 auto;
    position: relative;
 }
@@ -410,9 +411,9 @@ display: none;
    height: 22px; 
    font-size: 2rem;
    font-weight: 400;
-   position: relative;
+   position: absolute;
    left: 5%;
-   top: 0px;
+   top: 15.5%;
    background-color: white;
    margin-bottom: 0px;
    
@@ -429,15 +430,15 @@ display: none;
 
 
 .section03{ 
-   width: 100%;
-   height: fit-content;
+   width: 100vw;
+aspect-ratio: 0.5818;
 }
 
 
 
 .section03Contents{
    width: 100vw;
-   height: 740px;
+aspect-ratio: 0.5818;
    position: relative;
    
   
@@ -464,7 +465,7 @@ display: none;
 .section03Contents img{
    margin-top: 24px;
    width: 90vw;
-   margin-left: 24px;
+   margin-left: 5.5%;
    object-fit: fill;
 }
 
@@ -496,7 +497,7 @@ display: none;
 
 .techList:nth-child(4){border-bottom: 1px solid #333333;}
 
-.techList p{font-size: 2.5rem; font-weight: 400;  padding-right: 5%; }
+.techList p{font-size: 2rem; font-weight: 400;  padding-right: 5%; }
 
 .techList span{ letter-spacing: -2.5%; text-align: justify; display: none;}
 
@@ -506,14 +507,14 @@ display: none;
 /*section04*/
 .section_Other_Remain{ 
    width: 100vw;
-   height: fit-content;  
+ aspect-ratio: 0.6818;
    position: relative;
 }
 
 
 .section_Other_Remain_Contents{
-   width: 100%;
-   margin: 0 auto;
+   width: 100vw;
+ aspect-ratio: 0.6818;
    position:relative;
    top:1500px;
 }
@@ -589,6 +590,7 @@ display: none;
    left: 50%;
    transform: translateX(-50%),translateY(-34.6%);
    padding: 5%;
+   font-size: 1.3rem;
    color: #333333;   
 }
 
@@ -611,7 +613,7 @@ display: none;
 
 .mobile_Solution_Text{
    width: 90%;
-   aspect-ratio: 1040px;
+   aspect-ratio: 0.6818px;
 
 }
 
@@ -646,7 +648,7 @@ flex-direction: column;
 
 .blochure{
    width: 100%;
-   height: 40px;
+   height: 70px;
    margin-top: 100px;
    position: relative;
 }
@@ -663,7 +665,7 @@ flex-direction: column;
    text-align: left;
    margin-top: 24px;
    position: relative;
-   bottom: -168px;
+   bottom: -228px;
    left: 25px;
 }
 
@@ -693,15 +695,13 @@ bottom: -330px;}
 .footerContents{
    width: 100%;
    height: 333px;
-   border-top: 1px solid #ffffff;
-   border-bottom: 1px solid #ffffff;
    position: absolute;
    bottom: 32px;
 }
 
 
 .footerContents span{
-    font-size: 1.4rem;
+    font-size: 1rem;
    font-weight: 100;
    position: absolute;
    left: 0px;
@@ -711,7 +711,7 @@ bottom: -330px;}
 }
 
 
-.footerContents p{float: right; padding: 15px; font-size: 1.4rem; font-weight: 100;}
+.footerContents p{float: right; padding: 15px; font-size: 1rem; font-weight: 100;}
 
 
 .footerContents img{
