@@ -297,8 +297,7 @@ path {
     flex-direction: column;
     align-items: center;
    left: 50%;
-   top: 28.6%;
-   transform: translateY(-28.6%);
+   top: 168px;
    transform: translateX(-50%);
    object-fit: cover;
 }
@@ -727,4 +726,3 @@ bottom: -330px;}
 
 
 }
-
