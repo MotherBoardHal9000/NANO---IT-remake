@@ -291,13 +291,14 @@ path {
 
 
 .section01Contents #mainBanner{
-   width: 90%;
-   height: fit-content;
+   width: 90vw;
+   aspect-ratio: 1/1;
    position: relative;
     flex-direction: column;
     align-items: center;
    left: 50%;
    top: 28.6%;
+   transform: translateY(-28.6%);
    transform: translateX(-50%);
    object-fit: cover;
 }
@@ -726,3 +727,4 @@ bottom: -330px;}
 
 
 }
+
