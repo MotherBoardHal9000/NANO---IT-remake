@@ -723,6 +723,18 @@ justify-content: space-between;
 #solution_Box_Right{width: 678px; aspect-ratio:1.83739837398374/1; color: #ffffff; padding: 20px; background-color: #E3007F;}
 #solution_Box_Right h2{margin-bottom: 12px;}
 
+
+#showroom{
+   position: absolute;
+   top: 1000px;
+   left: 24px;
+   color: #ffffff;
+   font-weight: 200;
+}
+
+
+
+
 /*news_Letter*/
 .news_Letter{
    width: 1380px;
@@ -859,4 +871,5 @@ bottom: 0px;}
    bottom: 20px;
 
 }
+
 
