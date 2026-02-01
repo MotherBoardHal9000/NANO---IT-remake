@@ -422,7 +422,11 @@ body {
    transform: translateY(10%);
    margin-right: 24px;
    transition: all 0.7s;  
+   filter: brightness(40%)
 }
+
+
+
 
 
 
@@ -850,4 +854,5 @@ bottom: 0px;}
    position: absolute;
    right: 30px;
    bottom: 20px;
+
 }
