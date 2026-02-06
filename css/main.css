@@ -150,6 +150,7 @@ body {
   width: 100%;
   height: fit-content;
   border-bottom: 1px solid #333333;
+  background-color: #ffffff;
 }
 
 .section01Contents {
@@ -318,6 +319,7 @@ body {
 .section02 {
   width: 100vw;
   height: fit-content;
+  background-color: #ffffff;
 }
 
 .section02Contents {
@@ -404,12 +406,12 @@ body {
 }
 
 #service {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 400;
   display: inline-block;
   margin-bottom: 100px;
   position: absolute;
-  top: 1583px;
+  top: 1590px;
 }
 
 #line {
@@ -422,9 +424,16 @@ body {
 
 /*section03*/
 
+#technology{
+    font-size: 4rem;
+  font-weight: 400;
+}
+
+
 .section03 {
   width: 100%;
   height: fit-content;
+  background-color: #ffffff;
 }
 
 .section03Contents {
@@ -437,6 +446,7 @@ body {
 }
 
 .section03Contents h3 {
+
   width: 370px;
   aspect-ratio: 5.1454/1;
   font-size: 4.59rem;
@@ -505,6 +515,7 @@ body {
   width: 100%;
   height: fit-content;
   position: relative;
+
 }
 
 .section_Other_Remain_Contents {
@@ -513,6 +524,7 @@ body {
   margin: 0 auto;
   position: relative;
   top: 800px;
+  background-color: #ffffff;
 }
 
 @keyframes UpandDown {
@@ -676,7 +688,7 @@ body {
 .solution_Text {
   width: 1380px;
   aspect-ratio: 2.82786/1;
-  margin-top: 78px;
+  margin-top: 48px;
   border-top: 1px solid var(--black);
 }
 
@@ -684,7 +696,7 @@ body {
   font-size: 2.2rem;
   font-weight: 500;
   width: fit-content;
-  margin-top: 63px;
+  margin-top: 43px;
   margin-bottom: 12px;
 }
 
@@ -731,7 +743,7 @@ body {
 
 #showroom {
   position: absolute;
-  top: 930px;
+  top: 880px;
   left: 24px;
   color: #ffffff;
   font-weight: 200;
@@ -801,11 +813,11 @@ body {
 .news_Letter h2 {
   width: 300px;
   aspect-ratio: 3.2906/1;
-  font-size: 4.59rem;
+  font-size: 4rem;
   font-weight: 400;
   position: absolute;
   left: 0;
-  top: 42%;
+  top: 41.2%;
   background-color: #ffffff;
 }
 
@@ -949,7 +961,7 @@ body {
 
 #footerBack {
   width: 100vw;
-  height: 510px;
+  height: 540px;
   position: absolute;
   bottom: -1822px;
   background-color: #333333;
