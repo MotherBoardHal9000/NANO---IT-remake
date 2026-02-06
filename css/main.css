@@ -486,13 +486,19 @@ body {
 .techList p {
   font-size: 2.5rem;
   font-weight: 400;
-  padding-right: 5%;
+  padding-right: 7%;
 }
 
 .techList span {
+   width: 550px;
   letter-spacing: -2.5%;
+  margin-left: 15%;
   text-align: justify;
 }
+
+
+
+
 
 /*section04*/
 .section_Other_Remain {
@@ -571,7 +577,7 @@ body {
 }
 
 #cosmos_Paper_Lefttop {
-  width: 390px;
+  width: 450px;
   aspect-ratio: 1/1;
   position: absolute;
   top: -33.1111%;
@@ -678,7 +684,7 @@ body {
   font-size: 2.2rem;
   font-weight: 500;
   width: fit-content;
-  margin-top: 133px;
+  margin-top: 63px;
   margin-bottom: 12px;
 }
 
@@ -725,7 +731,7 @@ body {
 
 #showroom {
   position: absolute;
-  top: 1000px;
+  top: 930px;
   left: 24px;
   color: #ffffff;
   font-weight: 200;
@@ -770,7 +776,7 @@ body {
   overflow: hidden;
   display: flex;
   position: absolute;
-  bottom: 400px;
+  bottom: 450px;
 }
 
 .card {
@@ -799,7 +805,7 @@ body {
   font-weight: 400;
   position: absolute;
   left: 0;
-  top: 43.2%;
+  top: 42%;
   background-color: #ffffff;
 }
 
@@ -943,7 +949,7 @@ body {
 
 #footerBack {
   width: 100vw;
-  height: 410px;
+  height: 510px;
   position: absolute;
   bottom: -1822px;
   background-color: #333333;
